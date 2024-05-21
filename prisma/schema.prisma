@@ -1,0 +1,75 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+
+// Define the degrees table
+model degrees {
+  degreeId   Int      @id @default(autoincrement())
+  degreeName String
+  numOfSems  Int
+
+  // Define the relationship with branches
+  branches   branches[]
+}
+
+// Define the branches table
+model branches {
+  branchId    Int      @id @default(autoincrement())
+  branchName  String
+  degreeId    Int
+  degrees     degrees  @relation(fields: [degreeId], references: [degreeId])
+
+  // Define the relationship with courses through branchCourse
+  branchCourse branchCourse[]
+}
+
+// Define the courses table
+model courses {
+  courseId   String   @id
+  courseName String
+
+  // Define the relationship with branchCourse
+  branchCourse branchCourse[]
+}
+
+// Define the branchCourse table
+model branchCourse {
+  branchId   Int
+  courseId   String
+  semester   Int
+  branch     branches  @relation(fields: [branchId], references: [branchId])
+  course     courses   @relation(fields: [courseId], references: [courseId])
+
+  @@id([branchId, courseId])
+  
+  // Define the relationship with pyqs
+  pyqs       pyqs[]
+}
+
+// Define the pyqs table
+model pyqs {
+  paperId      Int      @id @default(autoincrement())
+  courseId     String
+  branchId     Int
+  academicYear String
+  semester     Int
+  endSem       Boolean
+  pdfUrl       String
+
+  // Define the relationship with branchCourse
+  branchCourse branchCourse @relation(fields: [branchId, courseId], references: [branchId, courseId])
+
+}
+

@@ -1,0 +1,32 @@
+import prisma from "./dbClient";
+import { degreesData } from "./seedData";
+
+async function main() {
+    await prisma.pyqs.deleteMany()
+    await prisma.branchCourse.deleteMany()
+    await prisma.courses.deleteMany()
+    await prisma.branches.deleteMany()
+    await prisma.degrees.deleteMany()
+    
+    console.log("Deleted all data")
+
+    const promises: Promise<any>[] = []
+
+    degreesData.forEach( (degree) => {
+        const promise= prisma.degrees.create(degree)
+        promises.push(promise)
+    } )
+
+    await Promise.all(promises)
+}
+
+
+main()
+    .then( () => {
+        console.log("Data seeded successfully")
+        process.exit(0)
+    } )
+    .catch( (e) => {
+        console.error(e)
+        process.exit(1)
+    } )

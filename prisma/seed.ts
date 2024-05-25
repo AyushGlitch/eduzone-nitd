@@ -1,5 +1,6 @@
 import prisma from "./dbClient";
-import { degreesData } from "./seedData";
+import { coursesData, degreesData2 } from "./seedData";
+// import { degreesData } from "./seedData";
 
 async function main() {
     await prisma.pyqs.deleteMany()
@@ -10,9 +11,18 @@ async function main() {
     
     console.log("Deleted all data")
 
+    await prisma.courses.createMany({
+        data: coursesData
+    })
+
     const promises: Promise<any>[] = []
 
-    degreesData.forEach( (degree) => {
+    // degreesData.forEach( (degree) => {
+    //     const promise= prisma.degrees.create(degree)
+    //     promises.push(promise)
+    // } )
+
+    degreesData2.forEach( (degree) => {
         const promise= prisma.degrees.create(degree)
         promises.push(promise)
     } )

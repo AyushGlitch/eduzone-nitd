@@ -1137,38 +1137,994 @@ export const pyqsData: any[] = [
                             create: [
                                 {
                                     semester: 1,
-                                    courseId: "MEBB162",
+                                    courseId: "MALB101",
                                     pyqs: {
                                         create: [
                                             {
                                                 academicYear: "2023-24",
                                                 endSem: false,
-                                                pdfUrl: "https://drive.google.com/file/d/107xFt69MGTvAf0h5_riEdN_eZFnDjlFC/view?usp=drive_link",
+                                                pdfUrl: "https://drive.google.com/file/d/1uoOEeza-F5hW3weOq8qgjLGdswqCLoV2/view?usp=drive_link",
                                             },
                                             {
                                                 academicYear: "2023-24",
                                                 endSem: true,
-                                                pdfUrl: "https://drive.google.com/file/d/15JgNMuuaTnA7qyFRhFmQTZnXhUQpdqJk/view?usp=drive_link",
+                                                pdfUrl: "https://drive.google.com/file/d/1XhgqXVRIEOgEi7y3Iu3WEqSe4wH3MCLq/view?usp=drive_link",
                                             },
                                             {
                                                 academicYear: "2022-23",
                                                 endSem: false,
-                                                pdfUrl: "https://drive.google.com/file/d/1s4Nd6QjXh1e3lV-2OM69Pc1fRuJixF-c/view?usp=drive_link",
+                                                pdfUrl: "https://drive.google.com/file/d/1VP91D1-VSh_djfTs_M0VDygE_78lMY4p/view?usp=drive_link",
                                             },
                                             {
                                                 academicYear: "2022-23",
                                                 endSem: true,
-                                                pdfUrl: "https://drive.google.com/file/d/1YCZ9kjLMt_Pb-I8fF5NW-kwc5HOr7rD8/view?usp=drive_link",
+                                                pdfUrl: "https://drive.google.com/file/d/1UqWjij8jYXDcr0u_lsR148QW16-FgZeG/view?usp=drive_link",
                                             },
                                             {
                                                 academicYear: "2021-22",
                                                 endSem: false,
-                                                pdfUrl: "https://drive.google.com/file/d/1M-xUETxebV-xtdRwVj9uGBA6KoEeflZE/view?usp=drive_link",
+                                                pdfUrl: "https://drive.google.com/file/d/1ly2h9R3O8FhTfqjObyJz0VMVtm0UCR6X/view?usp=drive_link",
                                             },
                                             {
                                                 academicYear: "2021-22",
                                                 endSem: true,
-                                                pdfUrl: "https://drive.google.com/file/d/1wB0xmOfamXT8L5XY83oXFLaDcSUv583p/view?usp=drive_link",
+                                                pdfUrl: "https://drive.google.com/file/d/1ESWYSHiEeDe4EQxtNrCYY5kH023Dn0go/view?usp=drive_link",
+                                            },
+                                        ],
+                                    },
+                                },
+                                {
+                                    semester: 1,
+                                    courseId: "PHBB101",
+                                    pyqs: {
+                                        create: [
+                                            // {
+                                            //     academicYear: "2023-24",
+                                            //     endSem: false,
+                                            //     pdfUrl: "https://drive.google.com/file/d/1uoOEeza-F5hW3weOq8qgjLGdswqCLoV2/view?usp=drive_link",
+                                            // },
+                                            {
+                                                academicYear: "2023-24",
+                                                endSem: true,
+                                                pdfUrl: "https://drive.google.com/file/d/16ej8OufTvFjrdGebCpyngh2jAptlFEKF/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2022-23",
+                                                endSem: false,
+                                                pdfUrl: "https://drive.google.com/file/d/1TCrZLSPXrWu0yC-uAmAApzE3Iki4ROcF/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2022-23",
+                                                endSem: true,
+                                                pdfUrl: "https://drive.google.com/file/d/1fGsP-7ryxFohtM1_aEFtp72IfTMaDtWl/view?usp=drive_link",
+                                            },
+                                            // {
+                                            //     academicYear: "2021-22",
+                                            //     endSem: false,
+                                            //     pdfUrl: "https://drive.google.com/file/d/1ly2h9R3O8FhTfqjObyJz0VMVtm0UCR6X/view?usp=drive_link",
+                                            // },
+                                            // {
+                                            //     academicYear: "2021-22",
+                                            //     endSem: true,
+                                            //     pdfUrl: "https://drive.google.com/file/d/1ESWYSHiEeDe4EQxtNrCYY5kH023Dn0go/view?usp=drive_link",
+                                            // },
+                                        ],
+                                    },
+                                },
+                                {
+                                    semester: 1,
+                                    courseId: "ECBB101",
+                                    pyqs: {
+                                        create: [
+                                            {
+                                                academicYear: "2023-24",
+                                                endSem: false,
+                                                pdfUrl: "https://drive.google.com/file/d/1exbA_j1L2YP5EP0IXlGjP4rhV5JxlHva/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2023-24",
+                                                endSem: true,
+                                                pdfUrl: "https://drive.google.com/file/d/1Ckm4437-dKvdJwMhBJZ553NNEl-sKxrX/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2022-23",
+                                                endSem: false,
+                                                pdfUrl: "https://drive.google.com/file/d/1DC8XoKJK3kPY0SkBZRMeAdds7tvq4FiS/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2022-23",
+                                                endSem: true,
+                                                pdfUrl: "https://drive.google.com/file/d/1BYFiNgRn1PcRrYmpBIE1jOOfCaitKuxx/view?usp=drive_link",
+                                            },
+                                            // {
+                                            //     academicYear: "2021-22",
+                                            //     endSem: false,
+                                            //     pdfUrl: "https://drive.google.com/file/d/1ly2h9R3O8FhTfqjObyJz0VMVtm0UCR6X/view?usp=drive_link",
+                                            // },
+                                            // {
+                                            //     academicYear: "2021-22",
+                                            //     endSem: true,
+                                            //     pdfUrl: "https://drive.google.com/file/d/1ESWYSHiEeDe4EQxtNrCYY5kH023Dn0go/view?usp=drive_link",
+                                            // },
+                                        ],
+                                    },
+                                },
+                                {
+                                    semester: 1,
+                                    courseId: "HMBB101",
+                                    pyqs: {
+                                        create: [
+                                            {
+                                                academicYear: "2023-24",
+                                                endSem: false,
+                                                pdfUrl: "https://drive.google.com/file/d/1S-7TJwjuK6xWHq8LPlY3V7t6rmlU9jUh/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2023-24",
+                                                endSem: true,
+                                                pdfUrl: "https://drive.google.com/file/d/12rrXN4dSvQ_qlZRG4HNQW2XYn90BPbgA/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2022-23",
+                                                endSem: false,
+                                                pdfUrl: "https://drive.google.com/file/d/1RmLemg3wKs3LCpDT78vqKhcR6cGvBrCF/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2022-23",
+                                                endSem: true,
+                                                pdfUrl: "https://drive.google.com/file/d/1LhkkmX28p05OR1q_L344tqSAa8v_cCVJ/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2021-22",
+                                                endSem: false,
+                                                pdfUrl: "https://drive.google.com/file/d/1CsNgkZSpsYAx2BMtChBqT56PdP-xGRr-/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2021-22",
+                                                endSem: true,
+                                                pdfUrl: "https://drive.google.com/file/d/1R3a4zCN7zrpKYHMZOyjfzSZ6K5nkN-zt/view?usp=drive_link",
+                                            },
+                                        ],
+                                    },
+                                },
+                                {
+                                    semester: 1,
+                                    courseId: "CELB101",
+                                    pyqs: {
+                                        create: [
+                                            {
+                                                academicYear: "2023-24",
+                                                endSem: false,
+                                                pdfUrl: "https://drive.google.com/file/d/1YZEHQ83CgXW48pMA1yCmYCJTw4tWReaD/view?usp=drive_link",
+                                            },
+                                            // {
+                                            //     academicYear: "2023-24",
+                                            //     endSem: true,
+                                            //     pdfUrl: "https://drive.google.com/file/d/1XhgqXVRIEOgEi7y3Iu3WEqSe4wH3MCLq/view?usp=drive_link",
+                                            // },
+                                            {
+                                                academicYear: "2022-23",
+                                                endSem: false,
+                                                pdfUrl: "https://drive.google.com/file/d/1aSMonu7KmIg4xxVt15A6jwwfe7VFkUtA/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2022-23",
+                                                endSem: true,
+                                                pdfUrl: "https://drive.google.com/file/d/142_cIhcBxZIdtcdTeXxYPi36RKBvMI85/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2021-22",
+                                                endSem: false,
+                                                pdfUrl: "https://drive.google.com/file/d/1x1PFaAGtIXpVvACEfr50ABR1fvnjb_Op/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2021-22",
+                                                endSem: true,
+                                                pdfUrl: "https://drive.google.com/file/d/1RxWIcEW8Pr5p6p5hnOtVNXhTmoyj2p7V/view?usp=drive_link",
+                                            },
+                                        ],
+                                    },
+                                },
+
+                                {
+                                    semester: 2,
+                                    courseId: "MALB151",
+                                    pyqs: {
+                                        create: [
+                                            // {
+                                            //     academicYear: "2023-24",
+                                            //     endSem: false,
+                                            //     pdfUrl: "https://drive.google.com/file/d/1uoOEeza-F5hW3weOq8qgjLGdswqCLoV2/view?usp=drive_link",
+                                            // },
+                                            // {
+                                            //     academicYear: "2023-24",
+                                            //     endSem: true,
+                                            //     pdfUrl: "https://drive.google.com/file/d/1XhgqXVRIEOgEi7y3Iu3WEqSe4wH3MCLq/view?usp=drive_link",
+                                            // },
+                                            // {
+                                            //     academicYear: "2022-23",
+                                            //     endSem: false,
+                                            //     pdfUrl: "https://drive.google.com/file/d/1VP91D1-VSh_djfTs_M0VDygE_78lMY4p/view?usp=drive_link",
+                                            // },
+                                            {
+                                                academicYear: "2022-23",
+                                                endSem: true,
+                                                pdfUrl: "https://drive.google.com/file/d/1DbhjUbpGpDKpHMHJQqYl8iKKHM_FzC_G/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2021-22",
+                                                endSem: false,
+                                                pdfUrl: "https://drive.google.com/file/d/1V7JoAEx3bWh_nAxk7y1y5tdeOBZ4ICCv/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2021-22",
+                                                endSem: true,
+                                                pdfUrl: "https://drive.google.com/file/d/1t8-LA2sGrkyQhqEFeuPySE2yz_RERj16/view?usp=drive_link",
+                                            },
+                                        ],
+                                    },
+                                },
+                                {
+                                    semester: 2,
+                                    courseId: "ECLB151",
+                                    pyqs: {
+                                        create: [
+                                            // {
+                                            //     academicYear: "2023-24",
+                                            //     endSem: false,
+                                            //     pdfUrl: "https://drive.google.com/file/d/1uoOEeza-F5hW3weOq8qgjLGdswqCLoV2/view?usp=drive_link",
+                                            // },
+                                            // {
+                                            //     academicYear: "2023-24",
+                                            //     endSem: true,
+                                            //     pdfUrl: "https://drive.google.com/file/d/1XhgqXVRIEOgEi7y3Iu3WEqSe4wH3MCLq/view?usp=drive_link",
+                                            // },
+                                            // {
+                                            //     academicYear: "2022-23",
+                                            //     endSem: false,
+                                            //     pdfUrl: "https://drive.google.com/file/d/1VP91D1-VSh_djfTs_M0VDygE_78lMY4p/view?usp=drive_link",
+                                            // },
+                                            {
+                                                academicYear: "2022-23",
+                                                endSem: true,
+                                                pdfUrl: "https://drive.google.com/file/d/1cvybAnt-ZIbqnernhzZdimcc3j0HvFKD/view?usp=drive_link",
+                                            },
+                                            // {
+                                            //     academicYear: "2021-22",
+                                            //     endSem: false,
+                                            //     pdfUrl: "https://drive.google.com/file/d/1V7JoAEx3bWh_nAxk7y1y5tdeOBZ4ICCv/view?usp=drive_link",
+                                            // },
+                                            // {
+                                            //     academicYear: "2021-22",
+                                            //     endSem: true,
+                                            //     pdfUrl: "https://drive.google.com/file/d/1t8-LA2sGrkyQhqEFeuPySE2yz_RERj16/view?usp=drive_link",
+                                            // },
+                                        ],
+                                    },
+                                },
+                                {
+                                    semester: 2,
+                                    courseId: "CSBB181",
+                                    pyqs: {
+                                        create: [
+                                            // {
+                                            //     academicYear: "2023-24",
+                                            //     endSem: false,
+                                            //     pdfUrl: "https://drive.google.com/file/d/1uoOEeza-F5hW3weOq8qgjLGdswqCLoV2/view?usp=drive_link",
+                                            // },
+                                            // {
+                                            //     academicYear: "2023-24",
+                                            //     endSem: true,
+                                            //     pdfUrl: "https://drive.google.com/file/d/1XhgqXVRIEOgEi7y3Iu3WEqSe4wH3MCLq/view?usp=drive_link",
+                                            // },
+                                            // {
+                                            //     academicYear: "2022-23",
+                                            //     endSem: false,
+                                            //     pdfUrl: "https://drive.google.com/file/d/1VP91D1-VSh_djfTs_M0VDygE_78lMY4p/view?usp=drive_link",
+                                            // },
+                                            {
+                                                academicYear: "2022-23",
+                                                endSem: true,
+                                                pdfUrl: "https://drive.google.com/file/d/12u4cZMs160_UU7UfXa7XmDt_lHCrXH2-/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2021-22",
+                                                endSem: false,
+                                                pdfUrl: "https://drive.google.com/file/d/1uuWwQYzlmu4LYvh3TK8qX-PlU-Tfuwmw/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2021-22",
+                                                endSem: true,
+                                                pdfUrl: "https://drive.google.com/file/d/1aOG2XJkk6cAneJgLa6G6nsN93OwcIYht/view?usp=drive_link",
+                                            },
+                                        ],
+                                    },
+                                },
+                                {
+                                    semester: 2,
+                                    courseId: "MEBB162",
+                                    pyqs: {
+                                        create: [
+                                            // {
+                                            //     academicYear: "2023-24",
+                                            //     endSem: false,
+                                            //     pdfUrl: "https://drive.google.com/file/d/1uoOEeza-F5hW3weOq8qgjLGdswqCLoV2/view?usp=drive_link",
+                                            // },
+                                            // {
+                                            //     academicYear: "2023-24",
+                                            //     endSem: true,
+                                            //     pdfUrl: "https://drive.google.com/file/d/1XhgqXVRIEOgEi7y3Iu3WEqSe4wH3MCLq/view?usp=drive_link",
+                                            // },
+                                            {
+                                                academicYear: "2022-23",
+                                                endSem: false,
+                                                pdfUrl: "https://drive.google.com/file/d/1NvQu1gwwDKEOX1FdzstW9jZACWh_F2rJ/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2022-23",
+                                                endSem: true,
+                                                pdfUrl: "https://drive.google.com/file/d/1EoYCi2XB1K23nYeJVl1wgjrdcHcsJdtG/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2021-22",
+                                                endSem: false,
+                                                pdfUrl: "https://drive.google.com/file/d/1ERydpUnubmH71rTSV_et52gOO7Njc5zV/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2021-22",
+                                                endSem: true,
+                                                pdfUrl: "https://drive.google.com/file/d/1mP7ofB0vdk_b9GbaoZIO_MSDG1blTkCT/view?usp=drive_link",
+                                            },
+                                        ],
+                                    },
+                                },
+                                {
+                                    semester: 2,
+                                    courseId: "ECBB152",
+                                    pyqs: {
+                                        create: [
+                                            // {
+                                            //     academicYear: "2023-24",
+                                            //     endSem: false,
+                                            //     pdfUrl: "https://drive.google.com/file/d/1uoOEeza-F5hW3weOq8qgjLGdswqCLoV2/view?usp=drive_link",
+                                            // },
+                                            // {
+                                            //     academicYear: "2023-24",
+                                            //     endSem: true,
+                                            //     pdfUrl: "https://drive.google.com/file/d/1XhgqXVRIEOgEi7y3Iu3WEqSe4wH3MCLq/view?usp=drive_link",
+                                            // },
+                                            // {
+                                            //     academicYear: "2022-23",
+                                            //     endSem: false,
+                                            //     pdfUrl: "https://drive.google.com/file/d/1VP91D1-VSh_djfTs_M0VDygE_78lMY4p/view?usp=drive_link",
+                                            // },
+                                            {
+                                                academicYear: "2022-23",
+                                                endSem: true,
+                                                pdfUrl: "https://drive.google.com/file/d/1G9H-z3YoPuayHCUJtVXcPM42EZt1re68/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2021-22",
+                                                endSem: false,
+                                                pdfUrl: "https://drive.google.com/file/d/1woh9PDjd736P-xfF8QnOfE4gZrhUureF/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2021-22",
+                                                endSem: true,
+                                                pdfUrl: "https://drive.google.com/file/d/1icNQYwaSRkPdiocPIbj_CXsvL5zKGH_d/view?usp=drive_link",
+                                            },
+                                        ],
+                                    },
+                                },
+
+                                {
+                                    semester: 3,
+                                    courseId: "ECBB201",
+                                    pyqs: {
+                                        create: [
+                                            {
+                                                academicYear: "2023-24",
+                                                endSem: false,
+                                                pdfUrl: "https://drive.google.com/file/d/1iGW7Ro0OShr8Bi4-PTqepGRZmmKn5Ty6/view?usp=drive_link",
+                                            },
+                                            // {
+                                            //     academicYear: "2023-24",
+                                            //     endSem: true,
+                                            //     pdfUrl: "https://drive.google.com/file/d/1XhgqXVRIEOgEi7y3Iu3WEqSe4wH3MCLq/view?usp=drive_link",
+                                            // },
+                                            {
+                                                academicYear: "2022-23",
+                                                endSem: false,
+                                                pdfUrl: "https://drive.google.com/file/d/1eEmAXlrO-v8YMWyIbuwFn0jzErcWUGZ6/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2022-23",
+                                                endSem: true,
+                                                pdfUrl: "https://drive.google.com/file/d/14T0WfTq6U0U9kLXI24QkIeB6-Kn85mB6/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2021-22",
+                                                endSem: false,
+                                                pdfUrl: "https://drive.google.com/file/d/1RlyVK81cP0lFxOIUkpL_bcuxdFrzeLbe/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2021-22",
+                                                endSem: true,
+                                                pdfUrl: "https://drive.google.com/file/d/1cstBvGkTFoEJPTIX5hGgD4Abj0mRrZzF/view?usp=drive_link",
+                                            },
+                                        ],
+                                    },
+                                },
+                                {
+                                    semester: 3,
+                                    courseId: "ECLB202",
+                                    pyqs: {
+                                        create: [
+                                            {
+                                                academicYear: "2023-24",
+                                                endSem: false,
+                                                pdfUrl: "https://drive.google.com/file/d/1dKpGeRo2zsFyGypAuu5QeJRu2kmPBbre/view?usp=drive_link",
+                                            },
+                                            // {
+                                            //     academicYear: "2023-24",
+                                            //     endSem: true,
+                                            //     pdfUrl: "https://drive.google.com/file/d/1XhgqXVRIEOgEi7y3Iu3WEqSe4wH3MCLq/view?usp=drive_link",
+                                            // },
+                                            {
+                                                academicYear: "2022-23",
+                                                endSem: false,
+                                                pdfUrl: "https://drive.google.com/file/d/1RA746Kft4cdx5Bg9rVZfrmF7JINE7h4o/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2022-23",
+                                                endSem: true,
+                                                pdfUrl: "https://drive.google.com/file/d/1lzihH35gRgu0ha_QvBA3wnUZ6AwPJeFG/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2021-22",
+                                                endSem: false,
+                                                pdfUrl: "https://drive.google.com/file/d/1WZ9f9zUyA-PEn-B3UrkI8JA2bxcwdlHa/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2021-22",
+                                                endSem: true,
+                                                pdfUrl: "https://drive.google.com/file/d/1gvpKaUZXjMLacpea2C5NmmBUBADYyd7E/view?usp=drive_link",
+                                            },
+                                        ],
+                                    },
+                                },
+                                {
+                                    semester: 3,
+                                    courseId: "ECLB203",
+                                    pyqs: {
+                                        create: [
+                                            {
+                                                academicYear: "2023-24",
+                                                endSem: false,
+                                                pdfUrl: "https://drive.google.com/file/d/1hzJAd8kpcsFrLVXGUb-zqk6mSdDD1bEm/view?usp=drive_link",
+                                            },
+                                            // {
+                                            //     academicYear: "2023-24",
+                                            //     endSem: true,
+                                            //     pdfUrl: "https://drive.google.com/file/d/1XhgqXVRIEOgEi7y3Iu3WEqSe4wH3MCLq/view?usp=drive_link",
+                                            // },
+                                            {
+                                                academicYear: "2022-23",
+                                                endSem: false,
+                                                pdfUrl: "https://drive.google.com/file/d/1Jm-Fis-DmygRx1kBQdsVBhWhjnJBAEWN/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2022-23",
+                                                endSem: true,
+                                                pdfUrl: "https://drive.google.com/file/d/1ns4Z7IYhr4iGtjkx-iQvzSB00ec7u8Sj/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2021-22",
+                                                endSem: false,
+                                                pdfUrl: "https://drive.google.com/file/d/1mODsI0qBYR3k56Sp48m6o9S2l873hBTw/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2021-22",
+                                                endSem: true,
+                                                pdfUrl: "https://drive.google.com/file/d/1451i7ESUPFiXB2sJaV1vupI0r9Jbuh-8/view?usp=drive_link",
+                                            },
+                                        ],
+                                    },
+                                },
+                                {
+                                    semester: 3,
+                                    courseId: "ECBB204",
+                                    pyqs: {
+                                        create: [
+                                            {
+                                                academicYear: "2023-24",
+                                                endSem: false,
+                                                pdfUrl: "https://drive.google.com/file/d/1QbI3WXOysLPdkSkAFZClk-9m-sqiGaKZ/view?usp=drive_link",
+                                            },
+                                            // {
+                                            //     academicYear: "2023-24",
+                                            //     endSem: true,
+                                            //     pdfUrl: "https://drive.google.com/file/d/1XhgqXVRIEOgEi7y3Iu3WEqSe4wH3MCLq/view?usp=drive_link",
+                                            // },
+                                            {
+                                                academicYear: "2022-23",
+                                                endSem: false,
+                                                pdfUrl: "https://drive.google.com/file/d/1gz2OPBZRzMprq-u8WwoonT1ujKpI79nw/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2022-23",
+                                                endSem: true,
+                                                pdfUrl: "https://drive.google.com/file/d/1lEFjRbwX2bxtVXzgwMbE-dvfCi5GU7tB/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2021-22",
+                                                endSem: false,
+                                                pdfUrl: "https://drive.google.com/file/d/1vxOPjavgxbICp6sNP0PWJh3DSvrRr8vV/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2021-22",
+                                                endSem: true,
+                                                pdfUrl: "https://drive.google.com/file/d/1KKEEN_GguymH7x6W04HEd7Djt_CraJ-b/view?usp=drive_link",
+                                            },
+                                        ],
+                                    },
+                                },
+                                {
+                                    semester: 3,
+                                    courseId: "ECLB205",
+                                    pyqs: {
+                                        create: [
+                                            {
+                                                academicYear: "2023-24",
+                                                endSem: false,
+                                                pdfUrl: "https://drive.google.com/file/d/1nkY48vufRo-7WPHzOkd9SUXkl0AOdKEB/view?usp=drive_link",
+                                            },
+                                            // {
+                                            //     academicYear: "2023-24",
+                                            //     endSem: true,
+                                            //     pdfUrl: "https://drive.google.com/file/d/1XhgqXVRIEOgEi7y3Iu3WEqSe4wH3MCLq/view?usp=drive_link",
+                                            // },
+                                            {
+                                                academicYear: "2022-23",
+                                                endSem: false,
+                                                pdfUrl: "https://drive.google.com/file/d/1RagCIuS1LJ32CIjiDY1JUsBT3gWGaJDr/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2022-23",
+                                                endSem: true,
+                                                pdfUrl: "https://drive.google.com/file/d/1Z9AJtoifYYXKowlqCEYTDj8rs5ytJGD-/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2021-22",
+                                                endSem: false,
+                                                pdfUrl: "https://drive.google.com/file/d/12S93vppNGOzT3fLFV4g65LsCfICOhBmJ/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2021-22",
+                                                endSem: true,
+                                                pdfUrl: "https://drive.google.com/file/d/1qAhnIYMFewZVFC5X5zS6cF474m485_Xn/view?usp=drive_link",
+                                            },
+                                        ],
+                                    },
+                                },
+
+                                {
+                                    semester: 4,
+                                    courseId: "ECBB251",
+                                    pyqs: {
+                                        create: [
+                                            {
+                                                academicYear: "2023-24",
+                                                endSem: false,
+                                                pdfUrl: "https://drive.google.com/file/d/1CWslTHeqzqfk3pz7X8wPvFAksIKa76tS/view?usp=drive_link",
+                                            },
+                                            // {
+                                            //     academicYear: "2023-24",
+                                            //     endSem: true,
+                                            //     pdfUrl: "https://drive.google.com/file/d/1XhgqXVRIEOgEi7y3Iu3WEqSe4wH3MCLq/view?usp=drive_link",
+                                            // },
+                                            {
+                                                academicYear: "2022-23",
+                                                endSem: false,
+                                                pdfUrl: "https://drive.google.com/file/d/1to5GKR8_cFB611aH_ezShlOAaqrCdtpi/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2022-23",
+                                                endSem: true,
+                                                pdfUrl: "https://drive.google.com/file/d/1xXhhQKG0NmWO8OdEP26HUq1FP4b-FSdB/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2021-22",
+                                                endSem: false,
+                                                pdfUrl: "https://drive.google.com/file/d/1OVhxlIEne9pb3zKgY0sounzzS9yGdw1k/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2021-22",
+                                                endSem: true,
+                                                pdfUrl: "https://drive.google.com/file/d/1obzPEKy52ItXnKFflvfc3y3dv6AWqafa/view?usp=drive_link",
+                                            },
+                                        ],
+                                    },
+                                },
+                                {
+                                    semester: 4,
+                                    courseId: "ECBB252",
+                                    pyqs: {
+                                        create: [
+                                            {
+                                                academicYear: "2023-24",
+                                                endSem: false,
+                                                pdfUrl: "https://drive.google.com/file/d/1WPJGPOmTtl_zrYYuV8iT5oijQLaOf3l2/view?usp=drive_link",
+                                            },
+                                            // {
+                                            //     academicYear: "2023-24",
+                                            //     endSem: true,
+                                            //     pdfUrl: "https://drive.google.com/file/d/1XhgqXVRIEOgEi7y3Iu3WEqSe4wH3MCLq/view?usp=drive_link",
+                                            // },
+                                            {
+                                                academicYear: "2022-23",
+                                                endSem: false,
+                                                pdfUrl: "https://drive.google.com/file/d/1z2p08bf9PYug2sTIdQm4-dwRVa5eVwHW/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2022-23",
+                                                endSem: true,
+                                                pdfUrl: "https://drive.google.com/file/d/1EzY-Tl33zHK8iCjtTwl5Wpc3eSi5DFaF/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2021-22",
+                                                endSem: false,
+                                                pdfUrl: "https://drive.google.com/file/d/1yF5f08xgxQWEvmC6HRXxnvWlYPIanVHx/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2021-22",
+                                                endSem: true,
+                                                pdfUrl: "https://drive.google.com/file/d/1MTlMcmJrD7-T6C7aWFpuewkTnPg4TdHj/view?usp=drive_link",
+                                            },
+                                        ],
+                                    },
+                                },
+                                {
+                                    semester: 4,
+                                    courseId: "ECBB253",
+                                    pyqs: {
+                                        create: [
+                                            {
+                                                academicYear: "2023-24",
+                                                endSem: false,
+                                                pdfUrl: "https://drive.google.com/file/d/1RiyN-mMARjrpWM4P95BYO5of60coU70r/view?usp=drive_link",
+                                            },
+                                            // {
+                                            //     academicYear: "2023-24",
+                                            //     endSem: true,
+                                            //     pdfUrl: "https://drive.google.com/file/d/1XhgqXVRIEOgEi7y3Iu3WEqSe4wH3MCLq/view?usp=drive_link",
+                                            // },
+                                            {
+                                                academicYear: "2022-23",
+                                                endSem: false,
+                                                pdfUrl: "https://drive.google.com/file/d/1UqiWgrKLPGJM8C2FZ6A_4FYi0ZVdubLN/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2022-23",
+                                                endSem: true,
+                                                pdfUrl: "https://drive.google.com/file/d/1Y0kxeCk6xZzSrvIFWMNpweTMpBqxNtqD/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2021-22",
+                                                endSem: false,
+                                                pdfUrl: "https://drive.google.com/file/d/1p6E4xKLuYnAAEuOvkYTXd9o4whLBN-BG/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2021-22",
+                                                endSem: true,
+                                                pdfUrl: "https://drive.google.com/file/d/1z80GwFFDvhdtMD1U1g8jLakD87eXkpFU/view?usp=drive_link",
+                                            },
+                                        ],
+                                    },
+                                },
+                                {
+                                    semester: 4,
+                                    courseId: "CSBB255",
+                                    pyqs: {
+                                        create: [
+                                            {
+                                                academicYear: "2023-24",
+                                                endSem: false,
+                                                pdfUrl: "https://drive.google.com/file/d/1ndUodO_kcHfUa4b87n3BjrFmaPuvg1t9/view?usp=drive_link",
+                                            },
+                                            // {
+                                            //     academicYear: "2023-24",
+                                            //     endSem: true,
+                                            //     pdfUrl: "https://drive.google.com/file/d/1XhgqXVRIEOgEi7y3Iu3WEqSe4wH3MCLq/view?usp=drive_link",
+                                            // },
+                                            {
+                                                academicYear: "2022-23",
+                                                endSem: false,
+                                                pdfUrl: "https://drive.google.com/file/d/15O5GHTjdPIeS5we8nFzt1y0qTJeRM8D4/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2022-23",
+                                                endSem: true,
+                                                pdfUrl: "https://drive.google.com/file/d/1ulfRM3z3DjnOBRmMJGFLhfw-TssrkSDl/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2021-22",
+                                                endSem: false,
+                                                pdfUrl: "https://drive.google.com/file/d/1OMiH8Xx52mUEfjVJ2LTsYUKnOToB7guR/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2021-22",
+                                                endSem: true,
+                                                pdfUrl: "https://drive.google.com/file/d/10qnhTHfYFLiPBuOHa8Dvx0gajEGAAj_a/view?usp=drive_link",
+                                            },
+                                        ],
+                                    },
+                                },
+
+                                {
+                                    semester: 5,
+                                    courseId: "ECBB301",
+                                    pyqs: {
+                                        create: [
+                                            {
+                                                academicYear: "2023-24",
+                                                endSem: false,
+                                                pdfUrl: "https://drive.google.com/file/d/1plt2aQEFkAVRIZoGD3Bm-2HqlGFkmlFW/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2023-24",
+                                                endSem: true,
+                                                pdfUrl: "https://drive.google.com/file/d/1gVTAm-pdIbo1Kgn8CgumUX8zzIMcNhC9/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2022-23",
+                                                endSem: false,
+                                                pdfUrl: "https://drive.google.com/file/d/1bLnW0taAzfI6zln4YOdibSxw3XSmgsc2/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2022-23",
+                                                endSem: true,
+                                                pdfUrl: "https://drive.google.com/file/d/1fCgu9T4r4CVCaVTgixoz4Czl5cvaof9i/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2021-22",
+                                                endSem: false,
+                                                pdfUrl: "https://drive.google.com/file/d/1PpWtUgv2joAlcnLMfAg7QaJDD0wEoci1/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2021-22",
+                                                endSem: true,
+                                                pdfUrl: "https://drive.google.com/file/d/1LuH9vySUiZ1pyr-15LQlSBW3Ur-XgXTw/view?usp=drive_link",
+                                            },
+                                        ],
+                                    },
+                                },
+                                {
+                                    semester: 5,
+                                    courseId: "ECBB303",
+                                    pyqs: {
+                                        create: [
+                                            {
+                                                academicYear: "2023-24",
+                                                endSem: false,
+                                                pdfUrl: "https://drive.google.com/file/d/1GdHlUrkJC3gxflJ3QdT7-xXHRz5HRF7k/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2023-24",
+                                                endSem: true,
+                                                pdfUrl: "https://drive.google.com/file/d/1ABohNIr2aByrlFFgQ4BlLi3mRENWmj4L/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2022-23",
+                                                endSem: false,
+                                                pdfUrl: "https://drive.google.com/file/d/1wxxap7VeFUJzzUCJ1TxFrHTw7OfPaPLa/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2022-23",
+                                                endSem: true,
+                                                pdfUrl: "https://drive.google.com/file/d/1are7CPs-dwqItmHTgQGc2tJRprW4YoZS/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2021-22",
+                                                endSem: false,
+                                                pdfUrl: "https://drive.google.com/file/d/1uxrdBCVuSUyKdvbqPK1LIVEZXN0W87eI/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2021-22",
+                                                endSem: true,
+                                                pdfUrl: "https://drive.google.com/file/d/1tSXRP5jIq-CBPkU04h8tgCYhBkUvhNlN/view?usp=drive_link",
+                                            },
+                                        ],
+                                    },
+                                },
+                                {
+                                    semester: 5,
+                                    courseId: "ECLB304",
+                                    pyqs: {
+                                        create: [
+                                            {
+                                                academicYear: "2023-24",
+                                                endSem: false,
+                                                pdfUrl: "https://drive.google.com/file/d/1SuHHa2gofILROwq-HQemVOhdL-hHfTfA/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2023-24",
+                                                endSem: true,
+                                                pdfUrl: "https://drive.google.com/file/d/1-udva_SaqnCXS_M45rcxKMxsrfNmUcko/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2022-23",
+                                                endSem: false,
+                                                pdfUrl: "https://drive.google.com/file/d/1HRGJZd90U4bsNRdvcXmLXi9GtR1bt6By/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2022-23",
+                                                endSem: true,
+                                                pdfUrl: "https://drive.google.com/file/d/16gTHI4ruLuJze7Fh7YLq81RekpzdgURh/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2021-22",
+                                                endSem: false,
+                                                pdfUrl: "https://drive.google.com/file/d/1NOHhhahzTPgNc4AByXHRYs8-0a5G-12m/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2021-22",
+                                                endSem: true,
+                                                pdfUrl: "https://drive.google.com/file/d/1DBfX8gOn3f5Ky5N81updSwroQW1HIzM8/view?usp=drive_link",
+                                            },
+                                        ],
+                                    },
+                                },
+
+                                {
+                                    semester: 6,
+                                    courseId: "ECLB351",
+                                    pyqs: {
+                                        create: [
+                                            {
+                                                academicYear: "2023-24",
+                                                endSem: false,
+                                                pdfUrl: "https://drive.google.com/file/d/1AjOOpD8PkmLoQIv0eXhB0IrWIy4YmRIL/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2023-24",
+                                                endSem: true,
+                                                pdfUrl: "https://drive.google.com/file/d/18g5I-V2ZeeRdTq-NqfnzkHAcUQHBfviA/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2022-23",
+                                                endSem: false,
+                                                pdfUrl: "https://drive.google.com/file/d/1rDYrcJkfa-am7-duqNeJpjpGcpyM8qGq/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2022-23",
+                                                endSem: true,
+                                                pdfUrl: "https://drive.google.com/file/d/1LTHhWExutyQroip-CVEXfJetFGC3ft1F/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2021-22",
+                                                endSem: false,
+                                                pdfUrl: "https://drive.google.com/file/d/122BogIlEY7vzJlSrdJoohtix0fuG8qqi/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2021-22",
+                                                endSem: true,
+                                                pdfUrl: "https://drive.google.com/file/d/1qAU6HGyRjTLOEgZtxEunycT21GhV7XZ0/view?usp=drive_link",
+                                            },
+                                        ],
+                                    },
+                                },
+                                {
+                                    semester: 6,
+                                    courseId: "ECBB352",
+                                    pyqs: {
+                                        create: [
+                                            // {
+                                            //     academicYear: "2023-24",
+                                            //     endSem: false,
+                                            //     pdfUrl: "https://drive.google.com/file/d/1AjOOpD8PkmLoQIv0eXhB0IrWIy4YmRIL/view?usp=drive_link",
+                                            // },
+                                            // {
+                                            //     academicYear: "2023-24",
+                                            //     endSem: true,
+                                            //     pdfUrl: "https://drive.google.com/file/d/18g5I-V2ZeeRdTq-NqfnzkHAcUQHBfviA/view?usp=drive_link",
+                                            // },
+                                            {
+                                                academicYear: "2022-23",
+                                                endSem: false,
+                                                pdfUrl: "https://drive.google.com/file/d/1biFH3her91Lj3_HOqVs1uGn7xaVU5wL2/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2022-23",
+                                                endSem: true,
+                                                pdfUrl: "https://drive.google.com/file/d/1wT6nNXQDpq3q0wk94xBtWbAyia5jGVEt/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2021-22",
+                                                endSem: false,
+                                                pdfUrl: "https://drive.google.com/file/d/1EpCEKhu-K7AWQTQ29HUJMnX10P05gxW0/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2021-22",
+                                                endSem: true,
+                                                pdfUrl: "https://drive.google.com/file/d/1eNENzkwa9gAThmz_PtGZj9ICu98-BNZS/view?usp=drive_link",
+                                            },
+                                        ],
+                                    },
+                                },
+                                {
+                                    semester: 6,
+                                    courseId: "ECBB353",
+                                    pyqs: {
+                                        create: [
+                                            {
+                                                academicYear: "2023-24",
+                                                endSem: false,
+                                                pdfUrl: "https://drive.google.com/file/d/1hkYoGT2v1bK5TFOIc_fBPADqWWaRQT_h/view?usp=drive_link",
+                                            },
+                                            // {
+                                            //     academicYear: "2023-24",
+                                            //     endSem: true,
+                                            //     pdfUrl: "https://drive.google.com/file/d/18g5I-V2ZeeRdTq-NqfnzkHAcUQHBfviA/view?usp=drive_link",
+                                            // },
+                                            {
+                                                academicYear: "2022-23",
+                                                endSem: false,
+                                                pdfUrl: "https://drive.google.com/file/d/18RbEs3yQ6JqkZoGumDR-G9ozHmNgcQf0/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2022-23",
+                                                endSem: true,
+                                                pdfUrl: "https://drive.google.com/file/d/1RxrQhlPcuSDq-vcpfMotkfYhc8nX9RFE/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2021-22",
+                                                endSem: false,
+                                                pdfUrl: "https://drive.google.com/file/d/17VyULCL-nKTpaxOR5X3KtJvBzneFJGjT/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2021-22",
+                                                endSem: true,
+                                                pdfUrl: "https://drive.google.com/file/d/1jnZJOm3Gw8EMUJJIT5MArN0Xkec9ZyJw/view?usp=drive_link",
+                                            },
+                                        ],
+                                    },
+                                },
+
+                                {
+                                    semester: 7,
+                                    courseId: "ECBB401",
+                                    pyqs: {
+                                        create: [
+                                            // {
+                                            //     academicYear: "2023-24",
+                                            //     endSem: false,
+                                            //     pdfUrl: "https://drive.google.com/file/d/1AjOOpD8PkmLoQIv0eXhB0IrWIy4YmRIL/view?usp=drive_link",
+                                            // },
+                                            {
+                                                academicYear: "2023-24",
+                                                endSem: true,
+                                                pdfUrl: "https://drive.google.com/file/d/17VhGjFD6CKJIk6WhHQzW5XDLk0TlDlAP/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2022-23",
+                                                endSem: false,
+                                                pdfUrl: "https://drive.google.com/file/d/1K61u0zY7ePPUOFHCN85qlXqXL9qDa8ym/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2022-23",
+                                                endSem: true,
+                                                pdfUrl: "https://drive.google.com/file/d/1cAeMaC9yWb_7U8bH_FqR4uHtck5gcfpi/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2021-22",
+                                                endSem: false,
+                                                pdfUrl: "https://drive.google.com/file/d/1VUKwRqH8Db6vHif7wd9z5DB-918KQgJm/view?usp=drive_link",
+                                            },
+                                            {
+                                                academicYear: "2021-22",
+                                                endSem: true,
+                                                pdfUrl: "https://drive.google.com/file/d/1LpomEBvWJYk10L3XBDhKitn8A9xuFn_1/view?usp=drive_link",
                                             },
                                         ],
                                     },
@@ -1176,6 +2132,52 @@ export const pyqsData: any[] = [
                             ],
                         },
                     },
+
+                    // {
+                    //     branchName: "EE",
+                    //     branchCourse: {
+                    //         create: [
+                    //             {
+                    //                 semester: 6,
+                    //                 courseId: "ECBB353",
+                    //                 pyqs: {
+                    //                     create: [
+                    //                         {
+                    //                             academicYear: "2023-24",
+                    //                             endSem: false,
+                    //                             pdfUrl: "https://drive.google.com/file/d/1hkYoGT2v1bK5TFOIc_fBPADqWWaRQT_h/view?usp=drive_link",
+                    //                         },
+                    //                         // {
+                    //                         //     academicYear: "2023-24",
+                    //                         //     endSem: true,
+                    //                         //     pdfUrl: "https://drive.google.com/file/d/18g5I-V2ZeeRdTq-NqfnzkHAcUQHBfviA/view?usp=drive_link",
+                    //                         // },
+                    //                         {
+                    //                             academicYear: "2022-23",
+                    //                             endSem: false,
+                    //                             pdfUrl: "https://drive.google.com/file/d/18RbEs3yQ6JqkZoGumDR-G9ozHmNgcQf0/view?usp=drive_link",
+                    //                         },
+                    //                         {
+                    //                             academicYear: "2022-23",
+                    //                             endSem: true,
+                    //                             pdfUrl: "https://drive.google.com/file/d/1RxrQhlPcuSDq-vcpfMotkfYhc8nX9RFE/view?usp=drive_link",
+                    //                         },
+                    //                         {
+                    //                             academicYear: "2021-22",
+                    //                             endSem: false,
+                    //                             pdfUrl: "https://drive.google.com/file/d/17VyULCL-nKTpaxOR5X3KtJvBzneFJGjT/view?usp=drive_link",
+                    //                         },
+                    //                         {
+                    //                             academicYear: "2021-22",
+                    //                             endSem: true,
+                    //                             pdfUrl: "https://drive.google.com/file/d/1jnZJOm3Gw8EMUJJIT5MArN0Xkec9ZyJw/view?usp=drive_link",
+                    //                         },
+                    //                     ],
+                    //                 },
+                    //             },
+                    //         ]
+                    //     }
+                    // }
                 ],
             },
         },

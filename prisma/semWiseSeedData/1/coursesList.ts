@@ -1,4 +1,10 @@
-const CSE1= [
+interface courseData {
+    courseId: string;
+    courseName: string;
+}
+
+
+const CSE1: courseData[]= [
     {
         courseId: "CSBB101",
         courseName: "Problem Solving & Computer Programming",
@@ -22,7 +28,7 @@ const CSE1= [
 ]
 
 
-const AIDS1= [
+const AIDS1: courseData[]= [
     {
         courseId: "ADLB101",
         courseName: "Mathematical Foundations for Data Science",
@@ -50,7 +56,7 @@ const AIDS1= [
 ]
 
 
-const ECE1= [
+const ECE1: courseData[]= [
     {
         courseId: "MALB101",
         courseName: "Advanced Calculus",
@@ -74,7 +80,7 @@ const ECE1= [
 ]
 
 
-const EE1= [
+const EE1: courseData[]= [
     {
         courseId: "PHL102",
         courseName: "Electrical Engineering Materials",
@@ -102,7 +108,7 @@ const EE1= [
 ]
 
 
-const ME1= [
+const ME1: courseData[]= [
     {
         courseId: "MALB101",
         courseName: "Engineering Mathematics-I",
@@ -130,7 +136,7 @@ const ME1= [
 ]
 
 
-const CE1= [
+const CE1: courseData[]= [
     {
         courseId: "CELB102",
         courseName: "Fundamentals of Engineering Mechanics",
@@ -158,5 +164,5 @@ const CE1= [
 ]
 
 
-const sem1Courses= [...AIDS1, ...CSE1, ...ECE1, ...EE1, ...ME1, ...CE1]
+const sem1Courses: courseData[]= [...AIDS1, ...CSE1, ...ECE1, ...EE1, ...ME1, ...CE1]
 export default sem1Courses

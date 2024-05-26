@@ -1,4 +1,10 @@
-export const CSE5= [
+interface courseData {
+    courseId: string;
+    courseName: string;
+}
+
+
+const CSE5: courseData[]= [
     {
         courseId: "CSBB301",
         courseName: "Computer Networks",
@@ -18,12 +24,12 @@ export const CSE5= [
 ]
 
 
-export const AIDS5= [
+const AIDS5: courseData[]= [
 
 ]
 
 
-export const ECE5= [
+const ECE5: courseData[]= [
     {
         courseId: "ECBB301",
         courseName: "Microprocessor and Microcontroller",
@@ -43,7 +49,7 @@ export const ECE5= [
 ]
 
 
-export const EE5= [
+const EE5: courseData[]= [
     {
         courseId: "EEB301",
         courseName: "Electrical Machines-II",
@@ -63,7 +69,7 @@ export const EE5= [
 ]
 
 
-export const ME5= [
+const ME5: courseData[]= [
     {
         courseId: "MEBB311",
         courseName: "IC Engines & Gas Turbines",
@@ -87,7 +93,7 @@ export const ME5= [
 ]
 
 
-export const CE5= [
+const CE5: courseData[]= [
     {
         courseId: "CELB301",
         courseName: "Structural Analysis -II",
@@ -115,5 +121,5 @@ export const CE5= [
 ]
 
 
-const sem5Courses= [...AIDS5, ...CSE5, ...ECE5, ...EE5, ...ME5, ...CE5]
+const sem5Courses: courseData[]= [...AIDS5, ...CSE5, ...ECE5, ...EE5, ...ME5, ...CE5]
 export default sem5Courses

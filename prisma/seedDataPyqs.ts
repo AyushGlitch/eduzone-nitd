@@ -64,11 +64,13 @@ export const pyqsData: any[] = [
     {
         data: {
             degreeName: "B.Tech",
+            compDegreeName: "Bachelor of Technology",
             numOfSems: 8,
             branches: {
                 create: [
                     {
                         branchName: "CSE",
+                        compBranchName: "Computer Science and Engineering",
                         branchCourse: {
                             create: [
                                 ...cseSem1Pyqs,
@@ -85,6 +87,7 @@ export const pyqsData: any[] = [
 
                     {
                         branchName: "AIDS",
+                        compBranchName: "Artificial Intelligence and Data Science",
                         branchCourse: {
                             create: [
                                 ...aidsSem1Pyqs,
@@ -101,6 +104,7 @@ export const pyqsData: any[] = [
 
                     {
                         branchName: "ECE",
+                        compBranchName: "Electronics and Communication Engineering",
                         branchCourse: {
                             create: [                            
                                 ...eceSem1Pyqs,
@@ -117,6 +121,7 @@ export const pyqsData: any[] = [
 
                     {
                         branchName: "EE",
+                        compBranchName: "Electrical Engineering",
                         branchCourse: {
                             create: [
                                 ...eeSem1Pyqs,
@@ -133,6 +138,7 @@ export const pyqsData: any[] = [
 
                     {
                         branchName: "ME",
+                        compBranchName: "Mechanical Engineering",
                         branchCourse: {
                             create: [
                                 ...meSem1Pyqs,
@@ -149,6 +155,7 @@ export const pyqsData: any[] = [
                     
                     {
                         branchName: "CE",
+                        compBranchName: "Civil Engineering",
                         branchCourse: {
                             create: [                             
                                 ...ceSem1Pyqs,

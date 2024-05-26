@@ -1,0 +1,8 @@
+docker run -d \
+  --name eduzone \
+  -e POSTGRES_USER=admin \
+  -e POSTGRES_PASSWORD=admin12345 \
+  -e POSTGRES_DB=eduzone-nitd \
+  -v postgres_data:/var/lib/postgresql/data \
+  -p 5432:5432 \
+  postgres

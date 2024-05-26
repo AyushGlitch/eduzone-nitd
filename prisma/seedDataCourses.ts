@@ -298,7 +298,7 @@ export const coursesData: any[] = [
         courseName: "Power Transmission and Distribution",
     },
     {
-        courseId: "ECBB206",
+        courseId: "ECB206",
         courseName: "Digital Electronics and Logic Design",
     },
     {

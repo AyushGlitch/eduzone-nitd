@@ -52,7 +52,7 @@ model branchCourse {
   branch     branches  @relation(fields: [branchId], references: [branchId])
   course     courses   @relation(fields: [courseId], references: [courseId])
 
-  @@id([branchId, courseId])
+  @@id([branchId, courseId, semester])
   
   // Define the relationship with pyqs
   pyqs       pyqs[]
@@ -69,7 +69,7 @@ model pyqs {
   pdfUrl       String
 
   // Define the relationship with branchCourse
-  branchCourse branchCourse @relation(fields: [branchId, courseId], references: [branchId, courseId])
+  branchCourse branchCourse @relation(fields: [branchId, courseId, semester], references: [branchId, courseId, semester])
 
 }
 

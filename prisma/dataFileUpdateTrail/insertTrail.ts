@@ -1,7 +1,7 @@
 import { pyqsData } from "./dataTrail";
 import fs from "fs";
 
-const pyqsDataFilePath = "./prisma/dataTrail.ts";
+const pyqsDataFilePath = "./prisma/dataFileUpdateTrail/dataTrail.ts";
 
 const branchName = "CSE";
 const semester = 1;

@@ -104,7 +104,7 @@ export default async function Page ( {params} : {params: {
                 <div className="w-11/12 xl:w-2/3 mt-14 xl:mt-24 mx-auto mb-3">
                     <div className="grid grid-cols-2 xl:grid-cols-4 gap-5">
                         {
-                            <Link href={`${syllabusTeachingScheme?.syllabusUrl}`} key={syllabusTeachingScheme?.syllabusId} className="xl:col-start-2" >
+                            <Link href={`${syllabusTeachingScheme?.syllabusUrl}`} key={syllabusTeachingScheme?.syllabusId} target="_blank" className="xl:col-start-2" >
                                 <Card className="h-full w-full aspect-video">
                                     <CardHeader>
                                         <CardTitle className="text-base xl:text-lg">Click to get Syllabus</CardTitle>
@@ -117,7 +117,7 @@ export default async function Page ( {params} : {params: {
                         }
 
                         {
-                            <Link href={`${syllabusTeachingScheme?.teachingSchemeUrl}`} key={syllabusTeachingScheme?.syllabusId}>
+                            <Link href={`${syllabusTeachingScheme?.teachingSchemeUrl}`} key={syllabusTeachingScheme?.syllabusId} target="_blank">
                                 <Card className="h-full w-full aspect-video">
                                     <CardHeader>
                                         <CardTitle className="text-base xl:text-lg">Click to get Teaching Scheme</CardTitle>

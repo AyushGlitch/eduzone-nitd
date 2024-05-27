@@ -72,7 +72,7 @@ export default async function Page ( {params} : {params: {
 
     return (
         <>
-            <div className="h-screen w-full flex flex-col justify-evenly items-center">
+            <div className="mt-28 w-full flex flex-col items-center">
                 <div className="flex flex-col gap-5 items-center justify-center">
                     <h1 className="font-extrabold text-6xl">
                         Choose the Course
@@ -82,12 +82,12 @@ export default async function Page ( {params} : {params: {
                     </h3>
                 </div>
 
-                <div className="w-2/3 mx-auto">
+                <div className="w-2/3 mt-24 mb-10 mx-auto">
                     <div className="grid grid-cols-3 gap-5 justify-evenly">
                         {
                             courses && courses.map( course => (
-                                <Link href={`/${degreeId}/${semNum}/${branchId}/${course.courseId}`} key={course.courseId}>
-                                    <Card className="h-full w-full">
+                                <Link href={`/search/${degreeId}/${semNum}/${branchId}/${course.courseId}`} key={course.courseId}>
+                                    <Card className="h-full w-full aspect-video">
                                         <CardHeader>
                                             <CardTitle>{course.courseId}</CardTitle>
                                         </CardHeader>

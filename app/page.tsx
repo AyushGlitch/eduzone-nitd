@@ -12,11 +12,11 @@ async function getDegrees() {
 export default async function Home() {
 
     const degrees = await getDegrees()
-    console.log(degrees)
+    // console.log(degrees)
 
     return (
         <>
-            <div className="h-screen w-full flex flex-col justify-evenly">
+            <div className="mt-28 w-full flex flex-col overflow-hidden">
                 <div className="w-2/3 mx-auto flex flex-col gap-5 items-center">
                     <h2 className="text-5xl font-medium">
                         Welcome to <span className="font-bold">Eduzone</span>{" "}
@@ -28,11 +28,11 @@ export default async function Home() {
                     </p>
                 </div>
 
-                <div className="w-2/3 mx-auto">
+                <div className="w-2/3 mx-auto mt-24">
                     <div className="flex gap-5 justify-evenly">
                         {
                             degrees && degrees.map( (degree) => (
-                                <Link href={`/${degree.degreeId}`} key={degree.degreeId}>
+                                <Link href={`/search/${degree.degreeId}`} key={degree.degreeId}>
                                     <Card>
                                         <CardHeader>
                                             <CardTitle>{degree.degreeName}</CardTitle>

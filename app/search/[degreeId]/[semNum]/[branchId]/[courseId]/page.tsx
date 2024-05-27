@@ -109,7 +109,7 @@ export default async function Page( {params} : { params : {
                     </h3> */}
                 </div>
 
-                <div className="w-3/4 mx-auto flex flex-col border-slate-400 border-4 gap-5 p-5">
+                <div className="w-3/4 mx-auto flex flex-col border-slate-400 border-4 gap-5 p-5 mb-10">
                     <div className="w-full flex flex-col items-center justify-center gap-5">
                         <div className="w-full flex items-center justify-center border-4 border-orange-300 p-2">
                             <p className="font-bold text-3xl">Books</p>

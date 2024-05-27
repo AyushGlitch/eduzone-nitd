@@ -16,9 +16,10 @@ datasource db {
 
 // Define the degrees table
 model degrees {
-  degreeId   Int      @id @default(autoincrement())
-  degreeName String
-  numOfSems  Int
+  degreeId        Int      @id @default(autoincrement())
+  degreeName      String
+  compDegreeName  String   @default("")
+  numOfSems       Int
 
   // Define the relationship with branches
   branches   branches[]
@@ -26,10 +27,11 @@ model degrees {
 
 // Define the branches table
 model branches {
-  branchId    Int      @id @default(autoincrement())
-  branchName  String
-  degreeId    Int
-  degrees     degrees  @relation(fields: [degreeId], references: [degreeId])
+  branchId        Int      @id @default(autoincrement())
+  branchName      String
+  compBranchName  String        @default("")
+  degreeId        Int
+  degrees         degrees  @relation(fields: [degreeId], references: [degreeId])
 
   // Define the relationship with courses through branchCourse
   branchCourse branchCourse[]

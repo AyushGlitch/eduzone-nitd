@@ -5,8 +5,12 @@ import Link from "next/link"
 
 export async function generateStaticParams() {
     const res= await prisma.degrees.findMany()
-    const degreeIds = res.map( degree => degree.degreeId.toString())
-    // console.log(degreeIds)
+    const degreeIds = res.map( degree => (
+        {
+            degreeId: degree.degreeId.toString()
+        }
+    ))
+    console.log(degreeIds)
     return degreeIds
 }
 

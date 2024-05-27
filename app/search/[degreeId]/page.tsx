@@ -32,18 +32,18 @@ export default async function Page( {params}: {params: {degreeId: string}} ) {
 
     return (
         <>
-            <div className="mt-28 w-full flex flex-col items-center">
-                <div className="flex flex-col gap-5 items-center justify-center">
-                    <h1 className="font-extrabold text-6xl">
+            <div className="mt-14 xl:mt-28 w-full flex flex-col items-center">
+                <div className="w-11/12 xl:w-2/3 mx-auto flex flex-col gap-5 items-center">
+                    <h1 className="text-3xl xl:text-5xl font-semibold">
                         Choose the semester
                     </h1>
-                    <h3 className="font-medium text-2xl">
+                    <h3 className="font-medium text-lg xl:text-2xl">
                         You want to explore
                     </h3>
                 </div>
 
-                <div className="w-2/3 mt-24 mx-auto">
-                    <div className="grid grid-cols-4 gap-5 justify-evenly">
+                <div className="w-2/3 mt-14 xl:mt-24 mx-auto mb-10">
+                    <div className="grid grid-cols-1 xl:grid-cols-4 gap-5 justify-evenly">
                         {
                             numOfSems && Array.from({length: numOfSems}).map( (_, index) => (
                                 <Link href={`/search/${degreeId}/${index+1}`} key={index}>

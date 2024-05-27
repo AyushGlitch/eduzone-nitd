@@ -99,9 +99,9 @@ export default async function Page( {params} : { params : {
 
     return (
         <>
-            <div className="h-screen w-full flex flex-col items-center gap-28">
-                <div className="flex flex-col gap-5 items-center justify-center mt-24">
-                    <h1 className="font-extrabold text-6xl">
+            <div className="mt-14 xl:mt-28 w-full flex flex-col items-center">
+                <div className="w-11/12 xl:w-2/3 mx-auto flex flex-col gap-5 items-center">
+                    <h1 className="text-3xl xl:text-5xl font-semibold xl:font-bold">
                         Explore the {courseId} Content
                     </h1>
                     {/* <h3 className="font-medium text-2xl">
@@ -109,13 +109,13 @@ export default async function Page( {params} : { params : {
                     </h3> */}
                 </div>
 
-                <div className="w-3/4 mx-auto flex flex-col border-slate-400 border-4 gap-5 p-5 mb-10">
+                <div className="w-11/12 xl:w-3/4 mt-7 xl:mt-14 mx-auto flex flex-col border-slate-400 border-4 gap-5 p-2 xl:p-5 mb-10">
                     <div className="w-full flex flex-col items-center justify-center gap-5">
                         <div className="w-full flex items-center justify-center border-4 border-orange-300 p-2">
                             <p className="font-bold text-3xl">Books</p>
                         </div>
 
-                        <div className="w-11/12 grid grid-cols-2 gap-5 p-5 border-4 border-green-200 mb-10">
+                        <div className="w-full xl:w-11/12 grid grid-cols-1 xl:grid-cols-2 gap-5 p-5 border-4 border-green-200 mb-10">
                             <Link href={`/pdfUrl`} key={1}>
                                 <Card className="h-full w-full">
                                     <CardHeader>
@@ -143,7 +143,7 @@ export default async function Page( {params} : { params : {
                             <p className="font-bold text-3xl">PYQS</p>
                         </div>
 
-                        <div className="w-11/12 grid grid-cols-2 gap-5 p-5 border-4 border-green-200 mb-10">
+                        <div className="w-full xl:w-11/12 grid grid-cols-1 xl:grid-cols-2 gap-5 p-5 border-4 border-green-200 mb-5">
                             {
                                 pyqs && pyqs.map( (pyq) => (
                                     <Link href={pyq.pdfUrl} key={pyq.paperId}>
@@ -151,7 +151,7 @@ export default async function Page( {params} : { params : {
                                             <CardHeader>
                                                 <CardTitle>{pyq.endSem ? ("End Sem") : ("Mid Sem")}</CardTitle>
                                             </CardHeader>
-                                            <CardContent className="text-lg">
+                                            <CardContent className="text-base xl:text-lg">
                                                 <p><span className="font-medium">Semester: </span> {pyq.semester}</p>
                                                 <p><span className="font-medium">Academic Year: </span>{pyq.academicYear}</p>
                                             </CardContent>

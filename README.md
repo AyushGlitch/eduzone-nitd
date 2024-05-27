@@ -1,3 +1,5 @@
+### You can visit the live site at: https://eduzonenitd.c1.is/
+
 # Eduzone-NIT Delhi
 
 Welcome to Eduzone NIT-Delhi! I'm Ayush Aryan Singh (221210026), a student of Computer Science and Engineering from the batch of 2026, and I'm excited to introduce you to this platform.

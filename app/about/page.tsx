@@ -34,16 +34,34 @@ export default async function Page() {
                             Our Technology Stack
                         </p>
                         <p className="font-normal text-sm xl:text-lg -mt-3">
-                            To bring Eduzone NIT-Delhi to life, I&apos;ve relied on a range of technologies. 
-                            Leveraging Next.js for seamless navigation and user experience through server-side rendering.
-                            Prisma provides a robust ORM for efficient data management.
-                            PostgreSQL ensures data reliability and scalability.
-                            Tailwind CSS facilitates crafting sleek and responsive user interfaces, enhancing the overall browsing experience.
-                            Google Drive is used to store the study materials, ensuring easy access and quick downloads.
-                            ShadcnUI is used for the simple and clean UI components like Cards &amp; Buttons.
-                            Prettier and ESLint are used for code formatting and linting, ensuring clean and consistent code.
-                            Docker is used to containerize the PostGres database.
+                            To bring Eduzone NIT-Delhi to life, I&apos;ve relied on a range of technologies.
                         </p>
+                        <ul className="font-normal text-sm xl:text-lg -mt-3 list-disc list-inside">
+                            <li>
+                                Leveraging Next.js for seamless navigation and user experience through server-side rendering.
+                            </li>
+                            <li>
+                                Prisma provides a robust ORM for efficient data management.
+                            </li>
+                            <li>
+                                PostgreSQL ensures data reliability and scalability.
+                            </li>
+                            <li>
+                                Tailwind CSS facilitates crafting sleek and responsive user interfaces, enhancing the overall browsing experience.
+                            </li>
+                            <li>
+                                Google Drive is used to store the study materials, ensuring easy access and quick downloads.
+                            </li>
+                            <li>
+                                ShadcnUI is used for the simple and clean UI components like Cards &amp; Buttons.
+                            </li>
+                            <li>
+                                Prettier and ESLint are used for code formatting and linting, ensuring clean and consistent code.
+                            </li>
+                            <li>
+                                Docker is used to containerize the PostGres database.
+                            </li>
+                        </ul>
 
                         <p className="text-base font-bold xl:text-2xl mt-4">
                             Why Static Site Generation?

@@ -16,28 +16,28 @@ export default async function Home() {
 
     return (
         <>
-            <div className="mt-28 w-full flex flex-col overflow-hidden">
-                <div className="w-2/3 mx-auto flex flex-col gap-5 items-center">
-                    <h2 className="text-5xl font-medium">
+            <div className="mt-14 xl:mt-28 w-full flex flex-col overflow-hidden">
+                <div className="w-11/12 xl:w-2/3 mx-auto flex flex-col gap-5 items-center">
+                    <h2 className="text-3xl xl:text-5xl font-medium">
                         Welcome to <span className="font-bold">Eduzone</span>{" "}
                         NIT-Delhi
                     </h2>
-                    <p className="text-xl">
+                    <p className="text-lg xl:text-xl">
                         Explore our archive of books, past year papers and more,
                         maintained by NIT-Delhi community.
                     </p>
                 </div>
 
-                <div className="w-2/3 mx-auto mt-24">
-                    <div className="flex gap-5 justify-evenly">
+                <div className="w-2/3 mx-auto mt-14 xl:mt-24 mb-10">
+                    <div className="grid grid-cols-1 xl:flex gap-5 justify-evenly items-center">
                         {
                             degrees && degrees.map( (degree) => (
                                 <Link href={`/search/${degree.degreeId}`} key={degree.degreeId}>
-                                    <Card>
+                                    <Card className="aspect-video">
                                         <CardHeader>
                                             <CardTitle>{degree.degreeName}</CardTitle>
                                         </CardHeader>
-                                        <CardContent className="text-lg">
+                                        <CardContent className="text-base xl:text-lg">
                                             {degree.compDegreeName}
                                         </CardContent>
                                     </Card>

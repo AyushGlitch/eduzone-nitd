@@ -8,10 +8,11 @@
         "build": "next build",
         "start": "next start",
         "lint": "next lint",
-        "seed": "tsx prisma/seed.ts",
+        "db:seed": "tsx prisma/seed.ts",
         "format": "prettier --write .",
         "db:migrate": "prisma migrate dev",
-        "db:studio": "prisma studio"
+        "db:studio": "prisma studio",
+        "db:setup": "npm run db:migrate && npm run db:seed"
     },
     "dependencies": {
         "@prisma/client": "^5.14.0",

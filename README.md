@@ -1,36 +1,25 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Eduzone-NIT Delhi Setup and Production
 
-## Getting Started
+## Setup Instructions
 
-First, run the development server:
+To set up the project locally, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. **Install Docker**: Install Docker on your machine if you haven't already.
+2. **Install Docker Compose**: Install Docker Compose, which will be used to manage the PostgreSQL database container.
+3. **Start the Database**: Run the command `docker-compose up` to start the PostgreSQL database container.
+4. **Set up Prisma**: Run the command `npm run db:setup` to set up the Prisma ORM and seed the database with initial data.
+5. **Start the Development Server**: Run the command `npm run dev` to start the Next.js development server.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Production Setup
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+For production or static site generation, follow these steps:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. **Modify Next.config.mjs**: In the `next.config.mjs` file, comment out the development configuration and uncomment the production configuration.
+2. **Build the Static Site**: Run the command `npm run build` to build the static HTML pages for all possible dynamic routes (currently 195 pages).
+3. **Host the Static Site**: After the build process completes, an `out` folder will be created containing the static website content. You can zip the files in this folder and upload them to any server or hosting platform of your choice.
 
-## Learn More
+## Static Site Generation and App Router
 
-To learn more about Next.js, take a look at the following resources:
+Eduzone NIT-Delhi utilizes Next.js's App Router and Static Site Generation (SSG) for dynamic routes. The `generateStaticParams` function is used to generate static parameters for dynamic routes, allowing for efficient pre-rendering of these pages during the build process.
 
--   [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
--   [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+By leveraging SSG, we can deliver a fast and performant experience to users, as the static HTML pages are served directly without the need for server-side processing for each request. This approach is particularly beneficial for our use case, where the content is the same for all users, and there is no requirement for personalized data or logins.

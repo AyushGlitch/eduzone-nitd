@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import prisma from "@/prisma/dbClient";
+import { get } from "http";
 import Link from "next/link";
 
 export async function generateStaticParams() {
@@ -58,6 +59,22 @@ async function getCourses(semNum: number, branchId: number) {
 }
 
 
+async function getSyllabusTeachingScheme(branchId: number) {
+    const res= await prisma.courseSyllabusTeachingScheme.findFirst({
+        where: {
+            branchId: branchId
+        },
+        select: {
+            syllabusUrl: true,
+            teachingSchemeUrl: true,
+            syllabusId: true
+        }
+    })
+
+    return res
+}
+
+
 export default async function Page ( {params} : {params: {
     degreeId: string,
     semNum: string,
@@ -69,6 +86,7 @@ export default async function Page ( {params} : {params: {
     const branchId= parseInt(params.branchId)
 
     const courses= await getCourses(semNum, branchId)
+    const syllabusTeachingScheme= await getSyllabusTeachingScheme(branchId)
 
     return (
         <>
@@ -81,6 +99,39 @@ export default async function Page ( {params} : {params: {
                         You want to explore
                     </h3>
                 </div>
+
+
+                <div className="w-11/12 xl:w-2/3 mt-14 xl:mt-24 mx-auto mb-3">
+                    <div className="grid grid-cols-2 xl:grid-cols-4 gap-5">
+                        {
+                            <Link href={`${syllabusTeachingScheme?.syllabusUrl}`} key={syllabusTeachingScheme?.syllabusId} className="xl:col-start-2" >
+                                <Card className="h-full w-full aspect-video">
+                                    <CardHeader>
+                                        <CardTitle className="text-base xl:text-lg">Click to get Syllabus</CardTitle>
+                                    </CardHeader>
+                                    <CardContent className="text-base xl:text-lg">
+                                            {syllabusTeachingScheme?.syllabusUrl.substring(0, 15) + "..."}
+                                    </CardContent>
+                                </Card>
+                            </Link>
+                        }
+
+                        {
+                            <Link href={`${syllabusTeachingScheme?.teachingSchemeUrl}`} key={syllabusTeachingScheme?.syllabusId}>
+                                <Card className="h-full w-full aspect-video">
+                                    <CardHeader>
+                                        <CardTitle className="text-base xl:text-lg">Click to get Teaching Scheme</CardTitle>
+                                    </CardHeader>
+                                    <CardContent className="text-base xl:text-lg">
+                                            {syllabusTeachingScheme?.syllabusUrl.substring(0, 15) + "..."}
+                                    </CardContent>
+                                </Card>
+                            </Link>
+                        }
+                    </div>
+                </div>
+                
+
 
                 <div className="w-2/3 mt-14 xl:mt-24 mx-auto mb-10">
                     <div className="grid grid-cols-1 xl:grid-cols-3 gap-5 justify-evenly">

@@ -50,6 +50,7 @@
 //     }
 // ]
 
+import { syllabusTeachingSchemaAIDS, syllabusTeachingSchemaCE, syllabusTeachingSchemaCSE, syllabusTeachingSchemaECE, syllabusTeachingSchemaEE, syllabusTeachingSchemaME } from "./seedDataSyallbus";
 import { aidsSem1Pyqs, ceSem1Pyqs, cseSem1Pyqs, eceSem1Pyqs, eeSem1Pyqs, meSem1Pyqs } from "./semWiseSeedData/1/pyqsList";
 import { aidsSem2Pyqs, ceSem2Pyqs, cseSem2Pyqs, eceSem2Pyqs, eeSem2Pyqs, meSem2Pyqs } from "./semWiseSeedData/2/pyqsList";
 import { aidsSem3Pyqs, ceSem3Pyqs, cseSem3Pyqs, eceSem3Pyqs, eeSem3Pyqs, meSem3Pyqs } from "./semWiseSeedData/3/pyqsList";
@@ -83,6 +84,12 @@ export const pyqsData: any[] = [
                                 ...cseSem8Pyqs
                             ],
                         },
+                        courseSyllabusTeachingScheme: {
+                            create: {
+                                syllabusUrl: syllabusTeachingSchemaCSE.syllabusUrl,
+                                teachingSchemeUrl: syllabusTeachingSchemaCSE.teachingSchemeUrl
+                            }
+                        }
                     },
 
                     {
@@ -100,6 +107,12 @@ export const pyqsData: any[] = [
                                 ...aidsSem8Pyqs,
                             ],
                         },
+                        courseSyllabusTeachingScheme: {
+                            create: {
+                                syllabusUrl: syllabusTeachingSchemaAIDS.syllabusUrl,
+                                teachingSchemeUrl: syllabusTeachingSchemaAIDS.teachingSchemeUrl
+                            }
+                        }
                     },
 
                     {
@@ -117,6 +130,12 @@ export const pyqsData: any[] = [
                                 ...eceSem8Pyqs,
                             ],
                         },
+                        courseSyllabusTeachingScheme: {
+                            create: {
+                                syllabusUrl: syllabusTeachingSchemaECE.syllabusUrl,
+                                teachingSchemeUrl: syllabusTeachingSchemaECE.teachingSchemeUrl
+                            }
+                        }
                     },
 
                     {
@@ -133,6 +152,12 @@ export const pyqsData: any[] = [
                                 ...eeSem7Pyqs,
                                 ...eeSem8Pyqs,
                             ]
+                        },
+                        courseSyllabusTeachingScheme: {
+                            create: {
+                                syllabusUrl: syllabusTeachingSchemaEE.syllabusUrl,
+                                teachingSchemeUrl: syllabusTeachingSchemaEE.teachingSchemeUrl
+                            }
                         }
                     },
 
@@ -150,6 +175,12 @@ export const pyqsData: any[] = [
                                 ...meSem7Pyqs,
                                 ...meSem8Pyqs,
                             ]
+                        },
+                        courseSyllabusTeachingScheme: {
+                            create: {
+                                syllabusUrl: syllabusTeachingSchemaME.syllabusUrl,
+                                teachingSchemeUrl: syllabusTeachingSchemaME.teachingSchemeUrl
+                            }
                         }
                     },
                     
@@ -167,6 +198,12 @@ export const pyqsData: any[] = [
                                 ...ceSem7Pyqs,
                                 ...ceSem8Pyqs,
                             ]
+                        },
+                        courseSyllabusTeachingScheme: {
+                            create: {
+                                syllabusUrl: syllabusTeachingSchemaCE.syllabusUrl,
+                                teachingSchemeUrl: syllabusTeachingSchemaCE.teachingSchemeUrl
+                            }
                         }
                     },
                 ],

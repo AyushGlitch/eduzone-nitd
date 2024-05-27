@@ -13,28 +13,28 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-
 // Define the degrees table
 model degrees {
   degreeId        Int      @id @default(autoincrement())
-  degreeName      String
+  degreeName      String   @unique
   compDegreeName  String   @default("")
   numOfSems       Int
 
   // Define the relationship with branches
-  branches   branches[]
+  branches                branches[]
 }
 
 // Define the branches table
 model branches {
   branchId        Int      @id @default(autoincrement())
-  branchName      String
-  compBranchName  String        @default("")
+  branchName      String   @unique
+  compBranchName  String   @default("")
   degreeId        Int
   degrees         degrees  @relation(fields: [degreeId], references: [degreeId])
 
   // Define the relationship with courses through branchCourse
-  branchCourse branchCourse[]
+  branchCourse   branchCourse[]
+  courseSyllabusTeachingScheme  courseSyllabusTeachingScheme?
 }
 
 // Define the courses table
@@ -72,6 +72,15 @@ model pyqs {
 
   // Define the relationship with branchCourse
   branchCourse branchCourse @relation(fields: [branchId, courseId, semester], references: [branchId, courseId, semester])
-
 }
 
+
+// Define the courseSyllabus table
+model courseSyllabusTeachingScheme {
+  syllabusId            Int         @id @default(autoincrement())
+  syllabusUrl           String
+  teachingSchemeUrl     String
+  branchId              Int         @unique
+
+  branch                branches    @relation(fields: [branchId], references: [branchId])
+}

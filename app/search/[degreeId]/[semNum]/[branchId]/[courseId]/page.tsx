@@ -146,7 +146,7 @@ export default async function Page( {params} : { params : {
                         <div className="w-full xl:w-11/12 grid grid-cols-1 xl:grid-cols-2 gap-5 p-5 border-4 border-green-200 mb-5">
                             {
                                 pyqs && pyqs.map( (pyq) => (
-                                    <Link href={pyq.pdfUrl} key={pyq.paperId}>
+                                    <Link href={pyq.pdfUrl} key={pyq.paperId} target="_blank">
                                         <Card className="h-full w-full">
                                             <CardHeader>
                                                 <CardTitle>{pyq.endSem ? ("End Sem") : ("Mid Sem")}</CardTitle>

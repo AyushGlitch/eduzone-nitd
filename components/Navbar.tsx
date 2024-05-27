@@ -8,7 +8,7 @@ export default async function Navbar() {
         <div className="w-screen h-30 flex items-center justify-between px-10 py-3">
             <Link href={"/"}>
                 <div className="flex gap-3 justify-center items-center">
-                    <Image alt="Logo" src={"/logo.png"} width={100} height={100} />
+                    <img src="/logo.png" alt="Logo" width={100} height={100} />
                     <p className="hidden xl:block text-white font-medium text-xl xl:font-semibold xl:text-3xl">Eduzone NIT-Delhi</p>
                 </div>
             </Link>

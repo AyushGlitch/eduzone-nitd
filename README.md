@@ -1,4 +1,4 @@
-### You can visit the live site at: https://eduzonenitd.c1.is/
+### You can visit the live site at: https://eduzonenitd.freewebhostmost.com/
 
 # Eduzone-NIT Delhi
 

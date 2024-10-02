@@ -18,7 +18,7 @@ export default async function Hero() {
                 </h3>
 
                 <motion.div
-                    className="absolute left-[8%] top-[18%] hidden md:block"
+                    className="absolute left-[5%] top-[18%] hidden md:block"
                     drag
                     dragSnapToOrigin
                 >
@@ -33,7 +33,7 @@ export default async function Hero() {
                 </motion.div>
 
                 <motion.div
-                    className="absolute right-[5%] top-[40%] hidden md:block"
+                    className="absolute right-[2%] top-[40%] hidden md:block"
                     drag
                     dragSnapToOrigin
                 >

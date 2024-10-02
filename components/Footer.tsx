@@ -8,11 +8,15 @@ export default async function Footer() {
             </p>
             <nav className="sm:ml-auto flex gap-4 sm:gap-6">
                 <Link
-                    className="text-xs hover:underline underline-offset-4"
+                    className="text-sm hover:underline underline-offset-4"
                     href="#"
                 >
                     About
                 </Link>
+
+                <p className="text-sm group">
+                    Icons by <Link href="https://icons8.com/illustrations" target="_blank" className="font-bold group-hover:underline">Ouch!</Link>
+                </p>
             </nav>
         </footer>
     );

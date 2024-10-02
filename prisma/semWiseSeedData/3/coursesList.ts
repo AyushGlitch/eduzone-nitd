@@ -3,8 +3,7 @@ interface courseData {
     courseName: string;
 }
 
-
-const CSE3: courseData[]= [
+const CSE3: courseData[] = [
     {
         courseId: "CSBB202",
         courseName: "Design and Analysis of Algorithms",
@@ -25,15 +24,11 @@ const CSE3: courseData[]= [
         courseId: "ECBB206",
         courseName: "Digital Electronics and Logic Design",
     },
-]
+];
 
+const AIDS3: courseData[] = [];
 
-const AIDS3: courseData[]= [
-
-]
-
-
-const ECE3: courseData[]= [
+const ECE3: courseData[] = [
     {
         courseId: "ECBB201",
         courseName: "Solid State Devices",
@@ -54,10 +49,9 @@ const ECE3: courseData[]= [
         courseId: "ECLB205",
         courseName: "Control Theory",
     },
-]
+];
 
-
-const EE3: courseData[]= [
+const EE3: courseData[] = [
     {
         courseId: "MAB203",
         courseName: "Numerical & Engineering Optimization Methods",
@@ -78,10 +72,9 @@ const EE3: courseData[]= [
         courseId: "EEB202",
         courseName: "Signal & Systems",
     },
-]
+];
 
-
-const ME3: courseData[]= [
+const ME3: courseData[] = [
     {
         courseId: "MALB201",
         courseName: "Engineering Mathematics-II",
@@ -102,10 +95,9 @@ const ME3: courseData[]= [
         courseId: "MEBB212",
         courseName: "Manufacturing Sciences-I",
     },
-]
+];
 
-
-const CE3: courseData[]= [
+const CE3: courseData[] = [
     {
         courseId: "CELB201",
         courseName: "Structural Analysis - I",
@@ -130,8 +122,14 @@ const CE3: courseData[]= [
         courseId: "CSBB111",
         courseName: "Computer Programming",
     },
-]
+];
 
-
-const sem3Courses: courseData[]= [...AIDS3, ...CSE3, ...ECE3, ...EE3, ...ME3, ...CE3]
-export default sem3Courses
+const sem3Courses: courseData[] = [
+    ...AIDS3,
+    ...CSE3,
+    ...ECE3,
+    ...EE3,
+    ...ME3,
+    ...CE3,
+];
+export default sem3Courses;

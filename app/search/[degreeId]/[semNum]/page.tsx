@@ -1,42 +1,43 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import prisma from "@/prisma/dbClient"
-import Link from "next/link"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import prisma from "@/prisma/dbClient";
+import Link from "next/link";
 
 export async function generateStaticParams() {
-    const res= await prisma.degrees.findMany()
-    const data = res.flatMap(degree => 
+    const res = await prisma.degrees.findMany();
+    const data = res.flatMap((degree) =>
         Array.from({ length: degree.numOfSems }, (_, i) => ({
             degreeId: degree.degreeId.toString(),
-            semNum: (i + 1).toString()
+            semNum: (i + 1).toString(),
         }))
     );
     // console.log(data)
-    return data
+    return data;
 }
-
 
 async function getBranches(degreeId: number) {
-    const res= await prisma.branches.findMany({
+    const res = await prisma.branches.findMany({
         where: {
-            degreeId
-        }
-    })
-    return res
+            degreeId,
+        },
+    });
+    return res;
 }
 
-
-export default async function Page( {params}: {params: {
-    degreeId: string,
-    semNum: string
-}} ) {
-
-    const degreeId= parseInt(params.degreeId)
-    const semNum= parseInt(params.semNum)
-    const branches= await getBranches(degreeId)
+export default async function Page({
+    params,
+}: {
+    params: {
+        degreeId: string;
+        semNum: string;
+    };
+}) {
+    const degreeId = parseInt(params.degreeId);
+    const semNum = parseInt(params.semNum);
+    const branches = await getBranches(degreeId);
 
     return (
         <>
-            <div className="mt-14 xl:mt-28 w-full flex flex-col items-center">
+            <div className="pt-24 xl:pt-28 w-full flex flex-col items-center">
                 <div className="w-11/12 xl:w-2/3 mx-auto flex flex-col gap-5 items-center">
                     <h1 className="text-3xl xl:text-5xl font-semibold">
                         Choose the Branch
@@ -48,24 +49,27 @@ export default async function Page( {params}: {params: {
 
                 <div className="w-2/3 mt-14 xl:mt-24 mx-auto mb-10">
                     <div className="grid grid-cols-1 xl:grid-cols-3 gap-5 justify-evenly">
-                        {
-                            branches && branches.map( branch => (
-                                <Link href={`/search/${degreeId}/${semNum}/${branch.branchId}`} key={branch.branchId}>
+                        {branches &&
+                            branches.map((branch) => (
+                                <Link
+                                    href={`/search/${degreeId}/${semNum}/${branch.branchId}`}
+                                    key={branch.branchId}
+                                >
                                     <Card className="h-full w-full aspect-video">
                                         <CardHeader>
-                                            <CardTitle>{branch.branchName}</CardTitle>
+                                            <CardTitle>
+                                                {branch.branchName}
+                                            </CardTitle>
                                         </CardHeader>
                                         <CardContent className="text-base xl:text-lg">
                                             {branch.compBranchName}
                                         </CardContent>
                                     </Card>
                                 </Link>
-                            ) )
-                        }
+                            ))}
                     </div>
                 </div>
-
             </div>
         </>
-    )
+    );
 }

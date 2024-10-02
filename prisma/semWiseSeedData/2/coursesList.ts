@@ -3,8 +3,7 @@ interface courseData {
     courseName: string;
 }
 
-
-const CSE2: courseData[]= [
+const CSE2: courseData[] = [
     {
         courseId: "CSBB151",
         courseName: "Data Structures",
@@ -21,38 +20,36 @@ const CSE2: courseData[]= [
         courseId: "MALB152",
         courseName: "Applied Linear Algebra",
     },
-]
+];
 
-
-const AIDS2: courseData[]= [
+const AIDS2: courseData[] = [
     {
         courseId: "ADLB151",
         courseName: "Probability and Statistics",
     },
-    
+
     {
         courseId: "ADBB152",
         courseName: "Computer Organization and Architecture",
     },
-    
+
     {
         courseId: "ADBB153",
         courseName: "Data Structures and Algorithms",
     },
-    
+
     {
         courseId: "ADBB154",
         courseName: "Programming using Python",
     },
-    
+
     {
         courseId: "ADLB155",
         courseName: "System Programming",
     },
-]
+];
 
-
-const ECE2: courseData[]= [
+const ECE2: courseData[] = [
     {
         courseId: "MALB151",
         courseName: "Linear Algebra and Complex Analysis",
@@ -73,10 +70,9 @@ const ECE2: courseData[]= [
         courseId: "ECBB152",
         courseName: "Digital Electronics & Logic Design",
     },
-]
+];
 
-
-const EE2: courseData[]= [
+const EE2: courseData[] = [
     {
         courseId: "MAL153",
         courseName: "Ordinary Differential Equation and Transforms",
@@ -97,10 +93,9 @@ const EE2: courseData[]= [
         courseId: "EEB152",
         courseName: "Electrical Workshop",
     },
-]
+];
 
-
-const ME2: courseData[]= [
+const ME2: courseData[] = [
     {
         courseId: "MEBB161",
         courseName: "Engineering Materials",
@@ -121,10 +116,9 @@ const ME2: courseData[]= [
         courseId: "CELB101",
         courseName: "Environmental Sciences",
     },
-]
+];
 
-
-const CE2: courseData[]= [
+const CE2: courseData[] = [
     {
         courseId: "CELB106",
         courseName: "Civil Engineering Materials and Construction Technique",
@@ -149,8 +143,14 @@ const CE2: courseData[]= [
         courseId: "MEBB163",
         courseName: "Engineering Workshop Practice",
     },
-]
+];
 
-
-const sem2Courses: courseData[]= [...AIDS2, ...CSE2, ...ECE2, ...EE2, ...ME2, ...CE2]
-export default sem2Courses
+const sem2Courses: courseData[] = [
+    ...AIDS2,
+    ...CSE2,
+    ...ECE2,
+    ...EE2,
+    ...ME2,
+    ...CE2,
+];
+export default sem2Courses;

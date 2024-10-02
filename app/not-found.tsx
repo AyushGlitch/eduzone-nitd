@@ -1,16 +1,11 @@
-
-import Link from 'next/link';
+import Link from "next/link";
 
 export default function NotFound() {
     return (
         <div className="mt-20 w-full flex flex-col overflow-hidden">
             <div className="w-2/3 mx-auto flex flex-col gap-5 items-center">
-                <h2 className="text-9xl font-bold">
-                    404
-                </h2>
-                <p className="text-5xl">
-                    Page Not Found
-                </p>
+                <h2 className="text-9xl font-bold">404</h2>
+                <p className="text-5xl">Page Not Found</p>
             </div>
 
             <div className="mx-auto mt-24">

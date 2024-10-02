@@ -3,7 +3,6 @@ import prisma from "./dbClient";
 import { coursesData } from "./seedDataCourses";
 import { pyqsData } from "./seedDataPyqs";
 
-
 async function deleteIfDataExists(model: string) {
     // @ts-ignore
     const dataExists = await prisma[model].findMany();
@@ -14,12 +13,12 @@ async function deleteIfDataExists(model: string) {
 }
 
 async function main() {
-    await deleteIfDataExists('pyqs');
-    await deleteIfDataExists('branchCourse');
-    await deleteIfDataExists('courses');
-    await deleteIfDataExists('branches');
-    await deleteIfDataExists('degrees');
-    await deleteIfDataExists('courseSyllabusTeachingScheme');
+    await deleteIfDataExists("pyqs");
+    await deleteIfDataExists("branchCourse");
+    await deleteIfDataExists("courses");
+    await deleteIfDataExists("branches");
+    await deleteIfDataExists("degrees");
+    await deleteIfDataExists("courseSyllabusTeachingScheme");
 
     console.log("Deleted all data");
 
@@ -30,10 +29,10 @@ async function main() {
 
     const promises: Promise<any>[] = [];
 
-    pyqsData.forEach( (degree) => {
-        const promise= prisma.degrees.create(degree)
-        promises.push(promise)
-    } )
+    pyqsData.forEach((degree) => {
+        const promise = prisma.degrees.create(degree);
+        promises.push(promise);
+    });
 
     await Promise.all(promises);
 }

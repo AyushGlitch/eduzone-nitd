@@ -8,12 +8,11 @@ interface pyqsListData {
     semester: number;
     courseId: string;
     pyqs: {
-        create: pyqsData[]
-    }
+        create: pyqsData[];
+    };
 }
 
-
-export const aidsSem2Pyqs: pyqsListData[]= [
+export const aidsSem2Pyqs: pyqsListData[] = [
     {
         semester: 2,
         courseId: "ADLB151",
@@ -28,7 +27,7 @@ export const aidsSem2Pyqs: pyqsListData[]= [
                 //     academicYear: "2023-24",
                 //     endSem: true,
                 //     pdfUrl: "https://drive.google.com/file/d/19-EEBMyP390PEjOSPp6m5fdLQedqYhmf/view?usp=drive_link",
-                // },                                            
+                // },
             ],
         },
     },
@@ -46,7 +45,7 @@ export const aidsSem2Pyqs: pyqsListData[]= [
                 //     academicYear: "2023-24",
                 //     endSem: true,
                 //     pdfUrl: "https://drive.google.com/file/d/19-EEBMyP390PEjOSPp6m5fdLQedqYhmf/view?usp=drive_link",
-                // },                                            
+                // },
             ],
         },
     },
@@ -64,7 +63,7 @@ export const aidsSem2Pyqs: pyqsListData[]= [
                 //     academicYear: "2023-24",
                 //     endSem: true,
                 //     pdfUrl: "https://drive.google.com/file/d/19-EEBMyP390PEjOSPp6m5fdLQedqYhmf/view?usp=drive_link",
-                // },                                            
+                // },
             ],
         },
     },
@@ -82,7 +81,7 @@ export const aidsSem2Pyqs: pyqsListData[]= [
                 //     academicYear: "2023-24",
                 //     endSem: true,
                 //     pdfUrl: "https://drive.google.com/file/d/19-EEBMyP390PEjOSPp6m5fdLQedqYhmf/view?usp=drive_link",
-                // },                                            
+                // },
             ],
         },
     },
@@ -100,14 +99,13 @@ export const aidsSem2Pyqs: pyqsListData[]= [
                 //     academicYear: "2023-24",
                 //     endSem: true,
                 //     pdfUrl: "https://drive.google.com/file/d/19-EEBMyP390PEjOSPp6m5fdLQedqYhmf/view?usp=drive_link",
-                // },                                            
+                // },
             ],
         },
     },
-]
+];
 
-
-export const cseSem2Pyqs: pyqsListData[]= [
+export const cseSem2Pyqs: pyqsListData[] = [
     {
         semester: 2,
         courseId: "CSBB151",
@@ -250,10 +248,9 @@ export const cseSem2Pyqs: pyqsListData[]= [
             ],
         },
     },
-]
+];
 
-
-export const eceSem2Pyqs: pyqsListData[]= [
+export const eceSem2Pyqs: pyqsListData[] = [
     {
         semester: 2,
         courseId: "MALB151",
@@ -444,10 +441,9 @@ export const eceSem2Pyqs: pyqsListData[]= [
             ],
         },
     },
-]
+];
 
-
-export const eeSem2Pyqs: pyqsListData[]= [
+export const eeSem2Pyqs: pyqsListData[] = [
     {
         semester: 2,
         courseId: "MAL153",
@@ -600,10 +596,9 @@ export const eeSem2Pyqs: pyqsListData[]= [
             ],
         },
     },
-]
+];
 
-
-export const meSem2Pyqs: pyqsListData[]= [
+export const meSem2Pyqs: pyqsListData[] = [
     {
         semester: 2,
         courseId: "MEBB161",
@@ -744,10 +739,9 @@ export const meSem2Pyqs: pyqsListData[]= [
             ],
         },
     },
-]
+];
 
-
-export const ceSem2Pyqs: pyqsListData[]= [
+export const ceSem2Pyqs: pyqsListData[] = [
     {
         semester: 2,
         courseId: "CELB106",
@@ -916,4 +910,4 @@ export const ceSem2Pyqs: pyqsListData[]= [
             ],
         },
     },
-]
+];

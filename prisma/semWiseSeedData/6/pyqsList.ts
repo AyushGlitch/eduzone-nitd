@@ -8,17 +8,13 @@ interface pyqsListData {
     semester: number;
     courseId: string;
     pyqs: {
-        create: pyqsData[]
-    }
+        create: pyqsData[];
+    };
 }
 
+export const aidsSem6Pyqs: pyqsListData[] = [];
 
-export const aidsSem6Pyqs: pyqsListData[]= [
-
-]
-
-
-export const cseSem6Pyqs: pyqsListData[]= [
+export const cseSem6Pyqs: pyqsListData[] = [
     {
         semester: 6,
         courseId: "CSBB351",
@@ -95,10 +91,9 @@ export const cseSem6Pyqs: pyqsListData[]= [
             ],
         },
     },
-]
+];
 
-
-export const eceSem6Pyqs: pyqsListData[]= [
+export const eceSem6Pyqs: pyqsListData[] = [
     {
         semester: 6,
         courseId: "ECLB351",
@@ -213,10 +208,9 @@ export const eceSem6Pyqs: pyqsListData[]= [
             ],
         },
     },
-]
+];
 
-
-export const eeSem6Pyqs: pyqsListData[]= [
+export const eeSem6Pyqs: pyqsListData[] = [
     {
         semester: 6,
         courseId: "EEB351",
@@ -331,14 +325,8 @@ export const eeSem6Pyqs: pyqsListData[]= [
             ],
         },
     },
-]
+];
 
+export const meSem6Pyqs: pyqsListData[] = [];
 
-export const meSem6Pyqs: pyqsListData[]= [
-
-]
-
-
-export const ceSem6Pyqs: pyqsListData[]= [
-
-]
+export const ceSem6Pyqs: pyqsListData[] = [];

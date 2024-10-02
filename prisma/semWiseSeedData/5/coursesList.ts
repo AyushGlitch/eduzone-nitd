@@ -3,8 +3,7 @@ interface courseData {
     courseName: string;
 }
 
-
-const CSE5: courseData[]= [
+const CSE5: courseData[] = [
     {
         courseId: "CSBB301",
         courseName: "Computer Networks",
@@ -21,15 +20,11 @@ const CSE5: courseData[]= [
         courseId: "CSBB304",
         courseName: "Quantum Computing",
     },
-]
+];
 
+const AIDS5: courseData[] = [];
 
-const AIDS5: courseData[]= [
-
-]
-
-
-const ECE5: courseData[]= [
+const ECE5: courseData[] = [
     {
         courseId: "ECBB301",
         courseName: "Microprocessor and Microcontroller",
@@ -46,10 +41,9 @@ const ECE5: courseData[]= [
         courseId: "ECLB304",
         courseName: "IC Applications",
     },
-]
+];
 
-
-const EE5: courseData[]= [
+const EE5: courseData[] = [
     {
         courseId: "EEB301",
         courseName: "Electrical Machines-II",
@@ -66,10 +60,9 @@ const EE5: courseData[]= [
         courseId: "EEB304",
         courseName: "Power Electronics",
     },
-]
+];
 
-
-const ME5: courseData[]= [
+const ME5: courseData[] = [
     {
         courseId: "MEBB311",
         courseName: "IC Engines & Gas Turbines",
@@ -90,10 +83,9 @@ const ME5: courseData[]= [
         courseId: "EEBB311",
         courseName: "Control Systems & Engineering",
     },
-]
+];
 
-
-const CE5: courseData[]= [
+const CE5: courseData[] = [
     {
         courseId: "CELB301",
         courseName: "Structural Analysis -II",
@@ -118,8 +110,14 @@ const CE5: courseData[]= [
         courseId: "HMLB302",
         courseName: "Value Education Program",
     },
-]
+];
 
-
-const sem5Courses: courseData[]= [...AIDS5, ...CSE5, ...ECE5, ...EE5, ...ME5, ...CE5]
-export default sem5Courses
+const sem5Courses: courseData[] = [
+    ...AIDS5,
+    ...CSE5,
+    ...ECE5,
+    ...EE5,
+    ...ME5,
+    ...CE5,
+];
+export default sem5Courses;

@@ -50,16 +50,78 @@
 //     }
 // ]
 
-import { syllabusTeachingSchemaAIDS, syllabusTeachingSchemaCE, syllabusTeachingSchemaCSE, syllabusTeachingSchemaECE, syllabusTeachingSchemaEE, syllabusTeachingSchemaME } from "./seedDataSyallbus";
-import { aidsSem1Pyqs, ceSem1Pyqs, cseSem1Pyqs, eceSem1Pyqs, eeSem1Pyqs, meSem1Pyqs } from "./semWiseSeedData/1/pyqsList";
-import { aidsSem2Pyqs, ceSem2Pyqs, cseSem2Pyqs, eceSem2Pyqs, eeSem2Pyqs, meSem2Pyqs } from "./semWiseSeedData/2/pyqsList";
-import { aidsSem3Pyqs, ceSem3Pyqs, cseSem3Pyqs, eceSem3Pyqs, eeSem3Pyqs, meSem3Pyqs } from "./semWiseSeedData/3/pyqsList";
-import { aidsSem4Pyqs, ceSem4Pyqs, cseSem4Pyqs, eceSem4Pyqs, eeSem4Pyqs, meSem4Pyqs } from "./semWiseSeedData/4/pyqsList";
-import { aidsSem5Pyqs, ceSem5Pyqs, cseSem5Pyqs, eceSem5Pyqs, eeSem5Pyqs, meSem5Pyqs } from "./semWiseSeedData/5/pyqsList";
-import { aidsSem6Pyqs, ceSem6Pyqs, cseSem6Pyqs, eceSem6Pyqs, eeSem6Pyqs, meSem6Pyqs } from "./semWiseSeedData/6/pyqsList";
-import { aidsSem7Pyqs, ceSem7Pyqs, cseSem7Pyqs, eceSem7Pyqs, eeSem7Pyqs, meSem7Pyqs } from "./semWiseSeedData/7/pyqsList";
-import { aidsSem8Pyqs, ceSem8Pyqs, cseSem8Pyqs, eceSem8Pyqs, eeSem8Pyqs, meSem8Pyqs } from "./semWiseSeedData/8/pyqsList";
-
+import {
+    syllabusTeachingSchemaAIDS,
+    syllabusTeachingSchemaCE,
+    syllabusTeachingSchemaCSE,
+    syllabusTeachingSchemaECE,
+    syllabusTeachingSchemaEE,
+    syllabusTeachingSchemaME,
+} from "./seedDataSyallbus";
+import {
+    aidsSem1Pyqs,
+    ceSem1Pyqs,
+    cseSem1Pyqs,
+    eceSem1Pyqs,
+    eeSem1Pyqs,
+    meSem1Pyqs,
+} from "./semWiseSeedData/1/pyqsList";
+import {
+    aidsSem2Pyqs,
+    ceSem2Pyqs,
+    cseSem2Pyqs,
+    eceSem2Pyqs,
+    eeSem2Pyqs,
+    meSem2Pyqs,
+} from "./semWiseSeedData/2/pyqsList";
+import {
+    aidsSem3Pyqs,
+    ceSem3Pyqs,
+    cseSem3Pyqs,
+    eceSem3Pyqs,
+    eeSem3Pyqs,
+    meSem3Pyqs,
+} from "./semWiseSeedData/3/pyqsList";
+import {
+    aidsSem4Pyqs,
+    ceSem4Pyqs,
+    cseSem4Pyqs,
+    eceSem4Pyqs,
+    eeSem4Pyqs,
+    meSem4Pyqs,
+} from "./semWiseSeedData/4/pyqsList";
+import {
+    aidsSem5Pyqs,
+    ceSem5Pyqs,
+    cseSem5Pyqs,
+    eceSem5Pyqs,
+    eeSem5Pyqs,
+    meSem5Pyqs,
+} from "./semWiseSeedData/5/pyqsList";
+import {
+    aidsSem6Pyqs,
+    ceSem6Pyqs,
+    cseSem6Pyqs,
+    eceSem6Pyqs,
+    eeSem6Pyqs,
+    meSem6Pyqs,
+} from "./semWiseSeedData/6/pyqsList";
+import {
+    aidsSem7Pyqs,
+    ceSem7Pyqs,
+    cseSem7Pyqs,
+    eceSem7Pyqs,
+    eeSem7Pyqs,
+    meSem7Pyqs,
+} from "./semWiseSeedData/7/pyqsList";
+import {
+    aidsSem8Pyqs,
+    ceSem8Pyqs,
+    cseSem8Pyqs,
+    eceSem8Pyqs,
+    eeSem8Pyqs,
+    meSem8Pyqs,
+} from "./semWiseSeedData/8/pyqsList";
 
 export const pyqsData: any[] = [
     {
@@ -81,20 +143,23 @@ export const pyqsData: any[] = [
                                 ...cseSem5Pyqs,
                                 ...cseSem6Pyqs,
                                 ...cseSem7Pyqs,
-                                ...cseSem8Pyqs
+                                ...cseSem8Pyqs,
                             ],
                         },
                         courseSyllabusTeachingScheme: {
                             create: {
-                                syllabusUrl: syllabusTeachingSchemaCSE.syllabusUrl,
-                                teachingSchemeUrl: syllabusTeachingSchemaCSE.teachingSchemeUrl
-                            }
-                        }
+                                syllabusUrl:
+                                    syllabusTeachingSchemaCSE.syllabusUrl,
+                                teachingSchemeUrl:
+                                    syllabusTeachingSchemaCSE.teachingSchemeUrl,
+                            },
+                        },
                     },
 
                     {
                         branchName: "AIDS",
-                        compBranchName: "Artificial Intelligence and Data Science",
+                        compBranchName:
+                            "Artificial Intelligence and Data Science",
                         branchCourse: {
                             create: [
                                 ...aidsSem1Pyqs,
@@ -109,17 +174,20 @@ export const pyqsData: any[] = [
                         },
                         courseSyllabusTeachingScheme: {
                             create: {
-                                syllabusUrl: syllabusTeachingSchemaAIDS.syllabusUrl,
-                                teachingSchemeUrl: syllabusTeachingSchemaAIDS.teachingSchemeUrl
-                            }
-                        }
+                                syllabusUrl:
+                                    syllabusTeachingSchemaAIDS.syllabusUrl,
+                                teachingSchemeUrl:
+                                    syllabusTeachingSchemaAIDS.teachingSchemeUrl,
+                            },
+                        },
                     },
 
                     {
                         branchName: "ECE",
-                        compBranchName: "Electronics and Communication Engineering",
+                        compBranchName:
+                            "Electronics and Communication Engineering",
                         branchCourse: {
-                            create: [                            
+                            create: [
                                 ...eceSem1Pyqs,
                                 ...eceSem2Pyqs,
                                 ...eceSem3Pyqs,
@@ -132,10 +200,12 @@ export const pyqsData: any[] = [
                         },
                         courseSyllabusTeachingScheme: {
                             create: {
-                                syllabusUrl: syllabusTeachingSchemaECE.syllabusUrl,
-                                teachingSchemeUrl: syllabusTeachingSchemaECE.teachingSchemeUrl
-                            }
-                        }
+                                syllabusUrl:
+                                    syllabusTeachingSchemaECE.syllabusUrl,
+                                teachingSchemeUrl:
+                                    syllabusTeachingSchemaECE.teachingSchemeUrl,
+                            },
+                        },
                     },
 
                     {
@@ -151,14 +221,16 @@ export const pyqsData: any[] = [
                                 ...eeSem6Pyqs,
                                 ...eeSem7Pyqs,
                                 ...eeSem8Pyqs,
-                            ]
+                            ],
                         },
                         courseSyllabusTeachingScheme: {
                             create: {
-                                syllabusUrl: syllabusTeachingSchemaEE.syllabusUrl,
-                                teachingSchemeUrl: syllabusTeachingSchemaEE.teachingSchemeUrl
-                            }
-                        }
+                                syllabusUrl:
+                                    syllabusTeachingSchemaEE.syllabusUrl,
+                                teachingSchemeUrl:
+                                    syllabusTeachingSchemaEE.teachingSchemeUrl,
+                            },
+                        },
                     },
 
                     {
@@ -174,21 +246,23 @@ export const pyqsData: any[] = [
                                 ...meSem6Pyqs,
                                 ...meSem7Pyqs,
                                 ...meSem8Pyqs,
-                            ]
+                            ],
                         },
                         courseSyllabusTeachingScheme: {
                             create: {
-                                syllabusUrl: syllabusTeachingSchemaME.syllabusUrl,
-                                teachingSchemeUrl: syllabusTeachingSchemaME.teachingSchemeUrl
-                            }
-                        }
+                                syllabusUrl:
+                                    syllabusTeachingSchemaME.syllabusUrl,
+                                teachingSchemeUrl:
+                                    syllabusTeachingSchemaME.teachingSchemeUrl,
+                            },
+                        },
                     },
-                    
+
                     {
                         branchName: "CE",
                         compBranchName: "Civil Engineering",
                         branchCourse: {
-                            create: [                             
+                            create: [
                                 ...ceSem1Pyqs,
                                 ...ceSem2Pyqs,
                                 ...ceSem3Pyqs,
@@ -197,14 +271,16 @@ export const pyqsData: any[] = [
                                 ...ceSem6Pyqs,
                                 ...ceSem7Pyqs,
                                 ...ceSem8Pyqs,
-                            ]
+                            ],
                         },
                         courseSyllabusTeachingScheme: {
                             create: {
-                                syllabusUrl: syllabusTeachingSchemaCE.syllabusUrl,
-                                teachingSchemeUrl: syllabusTeachingSchemaCE.teachingSchemeUrl
-                            }
-                        }
+                                syllabusUrl:
+                                    syllabusTeachingSchemaCE.syllabusUrl,
+                                teachingSchemeUrl:
+                                    syllabusTeachingSchemaCE.teachingSchemeUrl,
+                            },
+                        },
                     },
                 ],
             },

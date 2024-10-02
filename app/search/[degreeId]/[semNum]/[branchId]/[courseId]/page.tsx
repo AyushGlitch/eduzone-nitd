@@ -1,34 +1,31 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import prisma from "@/prisma/dbClient"
-import Link from "next/link"
-
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import prisma from "@/prisma/dbClient";
+import Link from "next/link";
 
 export async function generateStaticParams() {
-    const res= await prisma.branches.findMany({
+    const res = await prisma.branches.findMany({
         select: {
             branchId: true,
             degreeId: true,
             degrees: {
                 select: {
-                    numOfSems: true
-                }
-            }
-        }
-    })
+                    numOfSems: true,
+                },
+            },
+        },
+    });
 
-    const data= res.flatMap( d => (
-        Array.from( {length: d.degrees.numOfSems}, (_, i) => (
-            {
-                degreeId: d.degreeId.toString(),
-                semNum: (i+1).toString(),
-                branchId: d.branchId.toString()
-            }
-        ) )
-    ) )
+    const data = res.flatMap((d) =>
+        Array.from({ length: d.degrees.numOfSems }, (_, i) => ({
+            degreeId: d.degreeId.toString(),
+            semNum: (i + 1).toString(),
+            branchId: d.branchId.toString(),
+        }))
+    );
 
-    const promises: Promise<any>[]= []
+    const promises: Promise<any>[] = [];
 
-    data.forEach( (d) => {
+    data.forEach((d) => {
         const promise = prisma.branchCourse.findMany({
             select: {
                 branchId: true,
@@ -36,27 +33,27 @@ export async function generateStaticParams() {
                 courseId: true,
                 branch: {
                     select: {
-                        degreeId: true
-                    }
-                }
+                        degreeId: true,
+                    },
+                },
             },
             where: {
                 branchId: parseInt(d.branchId),
-                semester: parseInt(d.semNum)
-            }
-        })
-        promises.push(promise)
-    } )
+                semester: parseInt(d.semNum),
+            },
+        });
+        promises.push(promise);
+    });
 
-    const data2= await Promise.all(promises)
+    const data2 = await Promise.all(promises);
     const data3 = data2
-        .filter(d => d.length > 0)
-        .flatMap(d => 
+        .filter((d) => d.length > 0)
+        .flatMap((d) =>
             d.map((r: any) => ({
                 degreeId: r.branch.degreeId.toString(),
                 branchId: r.branchId.toString(),
                 semNum: r.semester.toString(),
-                courseId: r.courseId.toString()
+                courseId: r.courseId.toString(),
             }))
         );
 
@@ -65,41 +62,42 @@ export async function generateStaticParams() {
     return data3;
 }
 
-
 async function getPyqs(branchId: number, semNum: number, courseId: string) {
-    const res= await prisma.pyqs.findMany({
+    const res = await prisma.pyqs.findMany({
         where: {
             branchId,
             semester: semNum,
-            courseId
+            courseId,
         },
         orderBy: {
-            academicYear: 'desc'
-        }
-    })
+            academicYear: "desc",
+        },
+    });
 
     // console.log(res)
-    return res
+    return res;
 }
 
+export default async function Page({
+    params,
+}: {
+    params: {
+        degreeId: string;
+        branchId: string;
+        semNum: string;
+        courseId: string;
+    };
+}) {
+    const degreeId = parseInt(params.degreeId);
+    const branchId = parseInt(params.branchId);
+    const semNum = parseInt(params.semNum);
+    const courseId = params.courseId;
 
-export default async function Page( {params} : { params : {
-    degreeId: string,
-    branchId: string,
-    semNum: string,
-    courseId: string
-} } ) {
-
-    const degreeId= parseInt(params.degreeId)
-    const branchId= parseInt(params.branchId)
-    const semNum= parseInt(params.semNum)
-    const courseId= params.courseId
-
-    const pyqs = await getPyqs(branchId, semNum, courseId)
+    const pyqs = await getPyqs(branchId, semNum, courseId);
 
     return (
         <>
-            <div className="mt-14 xl:mt-28 w-full flex flex-col items-center">
+            <div className="pt-24 xl:pt-28 w-full flex flex-col items-center">
                 <div className="w-11/12 xl:w-2/3 mx-auto flex flex-col gap-5 items-center">
                     <h1 className="text-3xl xl:text-5xl font-semibold xl:font-bold">
                         Explore the {courseId} Content
@@ -144,26 +142,42 @@ export default async function Page( {params} : { params : {
                         </div>
 
                         <div className="w-full xl:w-11/12 grid grid-cols-1 xl:grid-cols-2 gap-5 p-5 border-4 border-green-200 mb-5">
-                            {
-                                pyqs && pyqs.map( (pyq) => (
-                                    <Link href={pyq.pdfUrl} key={pyq.paperId} target="_blank">
+                            {pyqs &&
+                                pyqs.map((pyq) => (
+                                    <Link
+                                        href={pyq.pdfUrl}
+                                        key={pyq.paperId}
+                                        target="_blank"
+                                    >
                                         <Card className="h-full w-full">
                                             <CardHeader>
-                                                <CardTitle>{pyq.endSem ? ("End Sem") : ("Mid Sem")}</CardTitle>
+                                                <CardTitle>
+                                                    {pyq.endSem
+                                                        ? "End Sem"
+                                                        : "Mid Sem"}
+                                                </CardTitle>
                                             </CardHeader>
                                             <CardContent className="text-base xl:text-lg">
-                                                <p><span className="font-medium">Semester: </span> {pyq.semester}</p>
-                                                <p><span className="font-medium">Academic Year: </span>{pyq.academicYear}</p>
+                                                <p>
+                                                    <span className="font-medium">
+                                                        Semester:{" "}
+                                                    </span>{" "}
+                                                    {pyq.semester}
+                                                </p>
+                                                <p>
+                                                    <span className="font-medium">
+                                                        Academic Year:{" "}
+                                                    </span>
+                                                    {pyq.academicYear}
+                                                </p>
                                             </CardContent>
                                         </Card>
                                     </Link>
-                                ) )
-                            }
+                                ))}
                         </div>
                     </div>
                 </div>
-
             </div>
         </>
-    )
+    );
 }

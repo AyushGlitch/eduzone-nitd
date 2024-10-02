@@ -7,12 +7,10 @@ import sem6Courses from "./semWiseSeedData/6/coursesList";
 import sem7Courses from "./semWiseSeedData/7/coursesList";
 import sem8Courses from "./semWiseSeedData/8/coursesList";
 
-
 interface courseData {
     courseId: string;
     courseName: string;
 }
-
 
 export const coursesData: courseData[] = [
     ...sem1Courses,

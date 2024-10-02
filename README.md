@@ -12,14 +12,14 @@ At Eduzone NIT-Delhi, our mission is clear: to make essential study materials ea
 
 To bring Eduzone NIT-Delhi to life, I've relied on a range of technologies:
 
-- **Next.js**: Leveraging Next.js for seamless navigation and user experience through server-side rendering.
-- **Prisma**: Prisma provides a robust ORM for efficient data management.
-- **PostgreSQL**: Ensures data reliability and scalability.
-- **Tailwind CSS**: Facilitates crafting sleek and responsive user interfaces, enhancing the overall browsing experience.
-- **Google Drive**: Used to store the study materials, ensuring easy access and quick downloads.
-- **ShadcnUI**: Used for simple and clean UI components like Cards & Buttons.
-- **Prettier and ESLint**: Used for code formatting and linting, ensuring clean and consistent code.
-- **Docker**: Used to containerize the PostgreSQL database.
+-   **Next.js**: Leveraging Next.js for seamless navigation and user experience through server-side rendering.
+-   **Prisma**: Prisma provides a robust ORM for efficient data management.
+-   **PostgreSQL**: Ensures data reliability and scalability.
+-   **Tailwind CSS**: Facilitates crafting sleek and responsive user interfaces, enhancing the overall browsing experience.
+-   **Google Drive**: Used to store the study materials, ensuring easy access and quick downloads.
+-   **ShadcnUI**: Used for simple and clean UI components like Cards & Buttons.
+-   **Prettier and ESLint**: Used for code formatting and linting, ensuring clean and consistent code.
+-   **Docker**: Used to containerize the PostgreSQL database.
 
 ## Why Static Site Generation?
 

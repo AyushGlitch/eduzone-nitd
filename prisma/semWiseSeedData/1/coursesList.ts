@@ -3,8 +3,7 @@ interface courseData {
     courseName: string;
 }
 
-
-const CSE1: courseData[]= [
+const CSE1: courseData[] = [
     {
         courseId: "CSBB101",
         courseName: "Problem Solving & Computer Programming",
@@ -25,10 +24,9 @@ const CSE1: courseData[]= [
         courseId: "MEBB162",
         courseName: "Engineering Visualization",
     },
-]
+];
 
-
-const AIDS1: courseData[]= [
+const AIDS1: courseData[] = [
     {
         courseId: "ADLB101",
         courseName: "Mathematical Foundations for Data Science",
@@ -53,10 +51,9 @@ const AIDS1: courseData[]= [
         courseId: "HMLB102",
         courseName: "Theory and Practices of Human Ethics",
     },
-]
+];
 
-
-const ECE1: courseData[]= [
+const ECE1: courseData[] = [
     {
         courseId: "MALB101",
         courseName: "Advanced Calculus",
@@ -77,10 +74,9 @@ const ECE1: courseData[]= [
         courseId: "CELB101",
         courseName: "Environmental Sciences",
     },
-]
+];
 
-
-const EE1: courseData[]= [
+const EE1: courseData[] = [
     {
         courseId: "PHL102",
         courseName: "Electrical Engineering Materials",
@@ -105,10 +101,9 @@ const EE1: courseData[]= [
         courseId: "EVL101",
         courseName: "Environmental Sciences",
     },
-]
+];
 
-
-const ME1: courseData[]= [
+const ME1: courseData[] = [
     {
         courseId: "MALB101",
         courseName: "Engineering Mathematics-I",
@@ -133,10 +128,9 @@ const ME1: courseData[]= [
         courseId: "MELB101",
         courseName: "Introduction to Sensors, Actuators & IoT",
     },
-]
+];
 
-
-const CE1: courseData[]= [
+const CE1: courseData[] = [
     {
         courseId: "CELB102",
         courseName: "Fundamentals of Engineering Mechanics",
@@ -161,8 +155,14 @@ const CE1: courseData[]= [
         courseId: "MALB159",
         courseName: "Mathematics for Engineers-I",
     },
-]
+];
 
-
-const sem1Courses: courseData[]= [...AIDS1, ...CSE1, ...ECE1, ...EE1, ...ME1, ...CE1]
-export default sem1Courses
+const sem1Courses: courseData[] = [
+    ...AIDS1,
+    ...CSE1,
+    ...ECE1,
+    ...EE1,
+    ...ME1,
+    ...CE1,
+];
+export default sem1Courses;

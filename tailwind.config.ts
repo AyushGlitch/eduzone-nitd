@@ -67,7 +67,7 @@ const config = {
                     from: { height: "var(--radix-accordion-content-height)" },
                     to: { height: "0" },
                 },
-                "blob": {
+                blob: {
                     "0%": {
                         transform: "translate(0px,0px) scale(1)",
                     },
@@ -79,13 +79,18 @@ const config = {
                     },
                     "100%": {
                         transform: "translate(0px, 0px) scale(1)",
-                    }
+                    },
+                },
+                'infinite-scroll': {
+                    from: { transform: 'translateX(0)' },
+                    to: { transform: 'translateX(-100%)' },
                 }
             },
             animation: {
                 "accordion-down": "accordion-down 0.2s ease-out",
                 "accordion-up": "accordion-up 0.2s ease-out",
-                "blob": "blob 7s infinite"
+                blob: "blob 7s infinite",
+                'infinite-scroll': 'infinite-scroll 5s linear infinite',
             },
         },
     },

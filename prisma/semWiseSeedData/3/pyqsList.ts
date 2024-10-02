@@ -8,17 +8,13 @@ interface pyqsListData {
     semester: number;
     courseId: string;
     pyqs: {
-        create: pyqsData[]
-    }
+        create: pyqsData[];
+    };
 }
 
+export const aidsSem3Pyqs: pyqsListData[] = [];
 
-export const aidsSem3Pyqs: pyqsListData[]= [
-
-]
-
-
-export const cseSem3Pyqs: pyqsListData[]= [
+export const cseSem3Pyqs: pyqsListData[] = [
     {
         semester: 3,
         courseId: "CSBB202",
@@ -209,10 +205,9 @@ export const cseSem3Pyqs: pyqsListData[]= [
             ],
         },
     },
-]
+];
 
-
-export const eceSem3Pyqs: pyqsListData[]= [
+export const eceSem3Pyqs: pyqsListData[] = [
     {
         semester: 3,
         courseId: "ECBB201",
@@ -403,10 +398,9 @@ export const eceSem3Pyqs: pyqsListData[]= [
             ],
         },
     },
-]
+];
 
-
-export const eeSem3Pyqs: pyqsListData[]= [
+export const eeSem3Pyqs: pyqsListData[] = [
     {
         semester: 3,
         courseId: "MAB203",
@@ -559,10 +553,9 @@ export const eeSem3Pyqs: pyqsListData[]= [
             ],
         },
     },
-]
+];
 
-
-export const meSem3Pyqs: pyqsListData[]= [
+export const meSem3Pyqs: pyqsListData[] = [
     {
         semester: 3,
         courseId: "MALB201",
@@ -653,10 +646,9 @@ export const meSem3Pyqs: pyqsListData[]= [
             ],
         },
     },
-]
+];
 
-
-export const ceSem3Pyqs: pyqsListData[]= [
+export const ceSem3Pyqs: pyqsListData[] = [
     {
         semester: 3,
         courseId: "CELB201",
@@ -671,7 +663,7 @@ export const ceSem3Pyqs: pyqsListData[]= [
                     academicYear: "2023-24",
                     endSem: true,
                     pdfUrl: "https://drive.google.com/file/d/1E0D8XEOffcbKZtfIiGCvLuuUEbQfASWq/view?usp=drive_link",
-                },                                            
+                },
             ],
         },
     },
@@ -689,7 +681,7 @@ export const ceSem3Pyqs: pyqsListData[]= [
                 //     academicYear: "2023-24",
                 //     endSem: true,
                 //     pdfUrl: "https://drive.google.com/file/d/1E0D8XEOffcbKZtfIiGCvLuuUEbQfASWq/view?usp=drive_link",
-                // },                                            
+                // },
             ],
         },
     },
@@ -707,7 +699,7 @@ export const ceSem3Pyqs: pyqsListData[]= [
                     academicYear: "2023-24",
                     endSem: true,
                     pdfUrl: "https://drive.google.com/file/d/160F6nN4yTpXUHHPT9cdAdbksgaYcRREj/view?usp=drive_link",
-                },                                            
+                },
             ],
         },
     },
@@ -725,7 +717,7 @@ export const ceSem3Pyqs: pyqsListData[]= [
                     academicYear: "2023-24",
                     endSem: true,
                     pdfUrl: "https://drive.google.com/file/d/1_SqDb73CVNhU08KBs01b9Q71Xj6IfP0E/view?usp=drive_link",
-                },                                            
+                },
             ],
         },
     },
@@ -743,7 +735,7 @@ export const ceSem3Pyqs: pyqsListData[]= [
                     academicYear: "2023-24",
                     endSem: true,
                     pdfUrl: "https://drive.google.com/file/d/1F0s-KeyLS7zKPTSV6JIEPOMMJk8cGDLY/view?usp=drive_link",
-                },                                            
+                },
             ],
         },
     },
@@ -761,8 +753,8 @@ export const ceSem3Pyqs: pyqsListData[]= [
                     academicYear: "2023-24",
                     endSem: true,
                     pdfUrl: "https://drive.google.com/file/d/1bVqOKj3a-h_kcyxahcTBon-pU2BWn0zH/view?usp=drive_link",
-                },                                            
+                },
             ],
         },
     },
-]
+];

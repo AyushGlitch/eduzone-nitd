@@ -13,7 +13,9 @@ const pdfUrl = "https://example.com/new-pyq.pdf";
 // Clone the existing pyqsData to ensure immutability
 let newData = JSON.parse(JSON.stringify(pyqsData));
 
-let branch = newData[0].data.branches.create.find((b: any) => b.branchName === branchName);
+let branch = newData[0].data.branches.create.find(
+    (b: any) => b.branchName === branchName
+);
 if (!branch) {
     branch = {
         branchName,
@@ -24,7 +26,9 @@ if (!branch) {
     newData[0].data.branches.create.push(branch);
 }
 
-let course = branch.branchCourse.create.find((c: any) => c.semester === semester && c.courseId === courseId);
+let course = branch.branchCourse.create.find(
+    (c: any) => c.semester === semester && c.courseId === courseId
+);
 if (!course) {
     course = {
         semester,
@@ -47,11 +51,31 @@ const newpyqsData = newData;
 console.log(course.pyqs);
 
 // Custom function to stringify JSON without quotes around keys
-function stringifyWithoutQuotes(obj: any, indent = 0): any{
+function stringifyWithoutQuotes(obj: any, indent = 0): any {
     if (Array.isArray(obj)) {
-        return '[' + obj.map(item => stringifyWithoutQuotes(item, indent + 2)).join(', ') + ']';
-    } else if (typeof obj === 'object' && obj !== null) {
-        return '{\n' + Object.entries(obj).map(([key, value]) => ' '.repeat(indent + 2) + key + ': ' + stringifyWithoutQuotes(value, indent + 2)).join(',\n') + '\n' + ' '.repeat(indent) + '}';
+        return (
+            "[" +
+            obj
+                .map((item) => stringifyWithoutQuotes(item, indent + 2))
+                .join(", ") +
+            "]"
+        );
+    } else if (typeof obj === "object" && obj !== null) {
+        return (
+            "{\n" +
+            Object.entries(obj)
+                .map(
+                    ([key, value]) =>
+                        " ".repeat(indent + 2) +
+                        key +
+                        ": " +
+                        stringifyWithoutQuotes(value, indent + 2)
+                )
+                .join(",\n") +
+            "\n" +
+            " ".repeat(indent) +
+            "}"
+        );
     } else {
         return JSON.stringify(obj);
     }
@@ -65,7 +89,7 @@ const fileContent = `export const pyqsData: any[] = ${jsonString};`;
 
 try {
     fs.writeFileSync(pyqsDataFilePath, fileContent);
-    console.log('Successfully added new pyq');
+    console.log("Successfully added new pyq");
 } catch (err) {
-    console.error('Error writing to pyqsData.ts:', err);
+    console.error("Error writing to pyqsData.ts:", err);
 }

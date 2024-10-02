@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, DM_Sans } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
+import Navbar2 from "@/components/Navbar2";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = DM_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
     title: "Eduzone NITD",
@@ -17,11 +17,11 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en" className="dark">
-            <body className={inter.className} style={{position: "relative", overflowX: "hidden"}}>
-                <Navbar />
-                    <div className="absolute bg-red-500 h-80 w-80 rounded-full left-1/3 top-1/3 mix-blend-exclusion -z-10 filter blur-xl opacity-70 animate-blob "></div>
-                    <div className="absolute bg-cyan-500 h-80 w-80 rounded-full right-1/3 top-1/3 mix-blend-exclusion -z-10 filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
-                    <div className="absolute bg-emerald-500 h-80 w-80 rounded-full left-[40%] top-1/2 mix-blend-exclusion -z-10 filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
+            <body
+                className={inter.className}
+                style={{ position: "relative", overflowX: "hidden" }}
+            >
+                <Navbar2 />
                 {children}
             </body>
         </html>

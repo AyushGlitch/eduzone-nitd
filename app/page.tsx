@@ -5,7 +5,7 @@ import Ticker from "@/components/Ticker";
 
 export default async function LandingPage() {
     return (
-        <div className="relative">
+        <div className="relative overflow-x-hidden">
             {/* <Navbar2 /> */}
             <Hero />
             <Ticker />

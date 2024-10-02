@@ -86,8 +86,8 @@ export default async function Page({
 
     return (
         <>
-            <div className="pt-24 xl:pt-28 w-full flex flex-col items-center">
-                <div className="w-11/12 xl:w-2/3 mx-auto flex flex-col gap-5 items-center">
+            <div className="pt-24 lg:pt-28 w-full flex flex-col items-center">
+                <div className="w-11/12 lg:w-2/3 mx-auto flex flex-col gap-5 items-center">
                     <h1 className="text-3xl xl:text-5xl font-semibold">
                         Choose the Course
                     </h1>
@@ -96,14 +96,14 @@ export default async function Page({
                     </h3>
                 </div>
 
-                <div className="w-11/12 xl:w-2/3 mt-14 xl:mt-24 mx-auto mb-3">
-                    <div className="grid grid-cols-2 xl:grid-cols-4 gap-5">
+                <div className="w-11/12 lg:w-2/3 mt-14 lg:mt-24 mx-auto mb-3">
+                    <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
                         {
                             <Link
                                 href={`${syllabusTeachingScheme?.syllabusUrl}`}
                                 key={syllabusTeachingScheme?.syllabusId}
                                 target="_blank"
-                                className="xl:col-start-2"
+                                className="lg:col-start-2"
                             >
                                 <Card className="h-full w-full aspect-video">
                                     <CardHeader>
@@ -145,8 +145,8 @@ export default async function Page({
                     </div>
                 </div>
 
-                <div className="w-2/3 mt-14 xl:mt-24 mx-auto mb-10">
-                    <div className="grid grid-cols-1 xl:grid-cols-3 gap-5 justify-evenly">
+                <div className="w-2/3 mt-14 lg:mt-24 mx-auto mb-10">
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 justify-evenly">
                         {courses &&
                             courses.map((course) => (
                                 <Link
@@ -159,7 +159,7 @@ export default async function Page({
                                                 {course.courseId}
                                             </CardTitle>
                                         </CardHeader>
-                                        <CardContent className="text-base xl:text-lg">
+                                        <CardContent className="text-base lg:text-lg">
                                             {course.courseName}
                                         </CardContent>
                                     </Card>

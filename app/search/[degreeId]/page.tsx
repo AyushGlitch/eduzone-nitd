@@ -30,18 +30,18 @@ export default async function Page({
 
     return (
         <>
-            <div className="pt-24 xl:pt-28 w-full flex flex-col items-center">
-                <div className="w-11/12 xl:w-2/3 mx-auto flex flex-col gap-5 items-center">
-                    <h1 className="text-3xl xl:text-5xl font-semibold">
+            <div className="pt-24 lg:pt-28 w-full flex flex-col items-center">
+                <div className="w-11/12 lg:w-2/3 mx-auto flex flex-col gap-5 items-center">
+                    <h1 className="text-3xl lg:text-5xl font-semibold">
                         Choose the semester
                     </h1>
-                    <h3 className="font-medium text-lg xl:text-2xl">
+                    <h3 className="font-medium text-lg lg:text-2xl">
                         You want to explore
                     </h3>
                 </div>
 
-                <div className="w-2/3 mt-14 xl:mt-24 mx-auto mb-10">
-                    <div className="grid grid-cols-1 xl:grid-cols-4 gap-5 justify-evenly">
+                <div className="w-2/3 mt-14 lg:mt-24 mx-auto mb-10">
+                    <div className="grid grid-cols-1 lg:grid-cols-4 gap-5 justify-evenly">
                         {numOfSems &&
                             Array.from({ length: numOfSems }).map(
                                 (_, index) => (

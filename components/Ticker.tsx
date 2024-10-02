@@ -46,7 +46,7 @@ const ScrollingList = ({ items }: any) => (
         <div className="absolute h-full w-10 left-0 top-0 bg-gradient-to-r from-black to-transparent z-10" />
         <div className="absolute h-full w-10 right-0 top-0 bg-gradient-to-l from-black to-transparent z-10" />
         <motion.div
-            transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+            transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
             initial={{ translateX: 0 }}
             animate={{ translateX: "-50%" }}
             className="flex gap-14 flex-none pr-14"
